@@ -131,6 +131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b14ecefb6e0e8542ad54b453b396372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cartSpeed: 1
+  cartSpeed: 2
   winPoint: {fileID: 0}
   currentProgress: 0
