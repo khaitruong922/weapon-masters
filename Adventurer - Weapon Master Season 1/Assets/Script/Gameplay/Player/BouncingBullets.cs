@@ -17,6 +17,7 @@ void Update(){
 }
 
 void OnCollisionEnter2D(Collision2D other) {
+    CreateEffect();
     if(other.gameObject.tag == "Enemy"){ //if it hits enemy, deal damage
         other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
         DestroyProjectile();
@@ -24,9 +25,12 @@ void OnCollisionEnter2D(Collision2D other) {
 
     }
 void DestroyProjectile(){ //what happens when projectile collides
+    CreateEffect();
+    Destroy(gameObject); //destroy projectile
+}
+void CreateEffect(){
     GameObject effect = Instantiate(impactEffect, transform.position, Quaternion.identity); //create effect
-            Destroy(effect,0.25f); //destroy effect
-            Destroy(gameObject); //destroy projectile
+    Destroy(effect,0.25f); //destroy effect
 }
 IEnumerator ProjectileTime(float seconds){ //destroy projectile after a moment
     yield return new WaitForSeconds(seconds);

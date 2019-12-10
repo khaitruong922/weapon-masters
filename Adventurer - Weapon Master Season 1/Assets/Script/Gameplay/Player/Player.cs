@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Player: MonoBehaviour
 {
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     public Camera cam;
     Vector2 movement;
     Vector2 mousePos;
@@ -18,6 +18,7 @@ public class Player: MonoBehaviour
     { 
         currentHP = maxHP;
         cam = FindObjectOfType<Camera>();
+        rb = GetComponent<Rigidbody2D>();
         healthBar = GameObject.FindWithTag("HealthBar").GetComponent<Image>();
     }
        void Update(){

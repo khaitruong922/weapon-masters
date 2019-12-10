@@ -71,12 +71,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a4f35a0eebdaf984686a146ea8dc96de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94eb62a87922fbf4a95ab61ee063a950, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.96, y: 2.96}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -116,9 +116,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.070586294, y: 0.044117212}
+  m_Offset: {x: -0.041950196, y: 0.051276684}
   serializedVersion: 2
-  m_Radius: 0.28962585
+  m_Radius: 0.36122417
 --- !u!114 &4478438998200236446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e55ea1b2f0f43934bb1668b4e7998dfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactEffect: {fileID: 3242754990573086036, guid: f136004d1ff22e74bbcaba95295e3aba,
+  impactEffect: {fileID: 7960841303700082276, guid: d5fcfba4e6ff7064881e46d4074a923a,
     type: 3}
   damage: 60
   destroyTime: 6

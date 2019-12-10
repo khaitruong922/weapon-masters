@@ -72,7 +72,6 @@ public class GunslingerAbility : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("High noon Started");
                 eCooldownLeft = eCooldown; //set cooldown upon activation
                 StartCoroutine("HighNoon",eDuration);
                 dashTimeLeft = dashTime;
@@ -87,7 +86,6 @@ public class GunslingerAbility : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Q))
             {
-                Debug.Log("Q activated");
                 StartCoroutine(MultiShoot(numberOfShots,delay));
                 qCooldownLeft = qCooldown; //set cooldown upon activation
             }
@@ -97,7 +95,6 @@ public class GunslingerAbility : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.R))
             {
-                Debug.Log("R activated");
                 StartCoroutine(Laser(rDuration));
                 rCooldownLeft = rCooldown; //set cooldown upon activation
             }
@@ -131,7 +128,6 @@ public class GunslingerAbility : MonoBehaviour
         attackSpeed *= multiplier;
         player.speed *= multiplier;
         yield return new WaitForSeconds(duration); 
-        Debug.Log("High Noon ended");
         attackSpeed /= multiplier;
         player.speed /= multiplier;
     }
