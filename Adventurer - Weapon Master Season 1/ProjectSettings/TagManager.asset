@@ -8,9 +8,7 @@ TagManager:
   - Enemy
   - AllyProjectile
   - HealthBar
-  - GameSystem
   - EnemyProjectile
-  - ProgressBar
   layers:
   - Default
   - TransparentFX

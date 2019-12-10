@@ -8,7 +8,7 @@ public class Cart: MonoBehaviour
     public float cartSpeed=1f;
     public Transform winPoint;
     private float maxDistance;
-    public float currentProgress;
+    [HideInInspector] public float currentProgress;
     void Start(){
         maxDistance = Vector2.Distance(transform.position,winPoint.position);
     }
@@ -17,15 +17,12 @@ public class Cart: MonoBehaviour
     {
         if(other.gameObject.tag == "Player"){
         transform.position = Vector2.MoveTowards(transform.position, winPoint.position, cartSpeed * Time.deltaTime);
-
     }
     }
     void Update(){
         currentProgress=(maxDistance - Vector2.Distance(transform.position,winPoint.position))/maxDistance;
-        Debug.Log(currentProgress*100+" %");
         if(Vector2.Distance(transform.position,winPoint.position) == 0)
-        Debug.Log("Win");
-        //GameHandler.Instance.Win();
+        GameHandler.Instance.Win();
     }
 
 }
