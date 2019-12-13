@@ -15,7 +15,7 @@ public class Bomber : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D other) {
-    if(other.gameObject.tag == "Player"){ 
+    if(other.collider.CompareTag("Player")){ 
         playerHealth.TakeDamage(damage);
         enemy.currentHP = -1;
     }

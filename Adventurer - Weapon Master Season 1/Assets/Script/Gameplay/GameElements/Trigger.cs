@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trigger : MonoBehaviour
 {
-    public GameObject objects;
+    private GameObject objects;
     void Start() {
         foreach(Transform child in transform) {
         child.gameObject.SetActive(false);
