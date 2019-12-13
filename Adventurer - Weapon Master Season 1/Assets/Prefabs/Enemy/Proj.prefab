@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 50564148764362058}
   - component: {fileID: 61176600065695476}
   m_Layer: 13
-  m_Name: Void_Proj
+  m_Name: Proj
   m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 1
-  destroyTime: 1
+  destroyTime: 1.5
   rb: {fileID: 50564148764362058}
   impactEffect: {fileID: 7563920255829860475, guid: 7a594bfaba17cc247a26d5ea6086c6a1,
     type: 3}

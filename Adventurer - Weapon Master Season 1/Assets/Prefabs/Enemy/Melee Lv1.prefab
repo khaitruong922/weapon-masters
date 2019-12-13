@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3646864390528782610}
   - component: {fileID: 4621229560882172090}
   m_Layer: 10
-  m_Name: Melee
+  m_Name: Melee Lv1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,21 +264,6 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 3646864391067242147}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 51
-      objectReference: {fileID: 0}
-    - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 52
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82fa9a0e0bd7aa74bbb8d623a1975428, type: 3}
 --- !u!1 &7444108088715542798 stripped
