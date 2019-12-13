@@ -10812,10 +10812,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1419223517, guid: a5dd95495c51f394880b48d9eccf2388, type: 3}
-      propertyPath: m_SortingOrder
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5dd95495c51f394880b48d9eccf2388, type: 3}
 --- !u!1 &1683348696
@@ -13448,11 +13444,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377656700012380789}
     m_Modifications:
-    - target: {fileID: 916945926500185750, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyHealthBar
-      objectReference: {fileID: 0}
     - target: {fileID: 916945926500185749, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13507,6 +13498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945926500185750, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemyHealthBar
       objectReference: {fileID: 0}
     - target: {fileID: 4266120996788187895, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -13538,11 +13534,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377656699754763596}
     m_Modifications:
-    - target: {fileID: 916945926500185750, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyHealthBar
-      objectReference: {fileID: 0}
     - target: {fileID: 916945926500185749, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13597,6 +13588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945926500185750, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemyHealthBar
       objectReference: {fileID: 0}
     - target: {fileID: 4266120996788187895, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -13628,11 +13624,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377656699783179564}
     m_Modifications:
-    - target: {fileID: 916945926500185750, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyHealthBar
-      objectReference: {fileID: 0}
     - target: {fileID: 916945926500185749, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13687,6 +13678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945926500185750, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemyHealthBar
       objectReference: {fileID: 0}
     - target: {fileID: 4266120996788187895, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -13718,11 +13714,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1377656700909216860}
     m_Modifications:
-    - target: {fileID: 916945926500185750, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_Name
-      value: EnemyHealthBar
-      objectReference: {fileID: 0}
     - target: {fileID: 916945926500185749, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13777,6 +13768,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945926500185750, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemyHealthBar
       objectReference: {fileID: 0}
     - target: {fileID: 4266120996788187895, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
