@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 568b6d465f4cec449baa3c8a6499c21c, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  mapName: 4 - Weapon Mastery
+  mapName: 4 - Corrupted Land
   mode: Payload
   difficulty: Insane
   description: ??

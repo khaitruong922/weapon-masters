@@ -122,6 +122,8 @@
      <Compile Include="Assets\Script\Gameplay\Enemy\EnemyMelee.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\EnemyMovement.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\EnemyRanged.cs" />
+     <Compile Include="Assets\Script\Gameplay\Enemy\Lava.cs" />
+     <Compile Include="Assets\Script\Gameplay\Enemy\MageVoidling.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\VoidlingProjectile.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\VoidlingSpawner.cs" />
      <Compile Include="Assets\Script\Gameplay\GameElements\Cart.cs" />

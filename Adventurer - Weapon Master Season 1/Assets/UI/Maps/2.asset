@@ -15,4 +15,7 @@ MonoBehaviour:
   mapName: 2 - Rush Hour
   mode: Payload
   difficulty: Normal
-  description: whatever
+  description: 'Dear Weapon Master,
+
+
+    Looks like you have finished your first mission. Good job!'
