@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class MageVoidling : MonoBehaviour
 {
-    public float range = 10f;
-    public float timeBtwCast=6f;
+    public float range = 40f;
+    public float timeBtwCast=7f;
     private float timeforNextCast;
 
     private Transform target;
     public GameObject spell; 
+    public float accuracy=2f;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class MageVoidling : MonoBehaviour
         {
             if(timeforNextCast<=0)
             {
-                Instantiate(spell, target.position,Quaternion.identity);
+                Instantiate(spell, target.position + new Vector3(Random.Range(-accuracy,accuracy),Random.Range(-accuracy,accuracy),0),Quaternion.identity);
                 timeforNextCast=timeBtwCast;
             }
             else 

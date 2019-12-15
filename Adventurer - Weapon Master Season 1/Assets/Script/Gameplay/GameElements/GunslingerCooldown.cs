@@ -8,13 +8,15 @@ public class GunslingerCooldown : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] public string skillKey= "Q";
-    public GunslingerAbility player;
+    private GunslingerAbility player;
     private Image cooldownFill;
     public TextMeshProUGUI number;
+    public TextMeshProUGUI key;
     // Update is called once per frame
     void Start(){
-        player = FindObjectOfType<GunslingerAbility>().GetComponent<GunslingerAbility>();
+        player = FindObjectOfType<GunslingerAbility>();
         cooldownFill = GetComponent<Image>();
+        key.text = skillKey;
     }
     void Update()
     {

@@ -20,7 +20,7 @@ void OnCollisionEnter2D(Collision2D other) {
     CreateEffect();
     if(other.gameObject.tag == "Enemy"){ //if it hits enemy, deal damage
         other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
-        DestroyProjectile();
+        //DestroyProjectile();
     }
 
     }
