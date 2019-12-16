@@ -147,9 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 472d0efc785943f41aeca8051aa82df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 7131651934969864699}
   cam: {fileID: 0}
-  speed: 3.5
+  speed: 4
   maxHP: 800
   currentHP: 0
   healthBar: {fileID: 0}
@@ -174,6 +173,8 @@ MonoBehaviour:
     type: 3}
   magicForce: 20
   attackSpeed: 1.5
+  delay: 0.1
+  maxAttack: 4
 --- !u!58 &2931921704100079037
 CircleCollider2D:
   m_ObjectHideFlags: 0

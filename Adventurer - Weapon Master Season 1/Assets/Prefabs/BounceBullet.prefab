@@ -133,5 +133,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactEffect: {fileID: 7960841303700082276, guid: d5fcfba4e6ff7064881e46d4074a923a,
     type: 3}
-  damage: 40
+  damage: 80
   destroyTime: 5

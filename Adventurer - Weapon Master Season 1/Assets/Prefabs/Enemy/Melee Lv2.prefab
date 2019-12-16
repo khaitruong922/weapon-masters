@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 2.5
+  speed: 3
   stopDistance: 0
   retreatDistance: 0
 --- !u!114 &2180287222488601681
@@ -137,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 8419844507199308648}
@@ -156,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyAttackRange: 1
   enemyDamage: 50
-  attackSpeed: 0.6
+  attackSpeed: 0.7
 --- !u!58 &7853235099590888008
 CircleCollider2D:
   m_ObjectHideFlags: 0

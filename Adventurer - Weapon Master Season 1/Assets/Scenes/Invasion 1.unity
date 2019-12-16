@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.75
+  attackSpeed: 0.6
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
 --- !u!114 &56019478
@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1005068957}
@@ -537,15 +538,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -593,7 +594,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132117034}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 91.362, y: -25.672, z: 0}
+  m_LocalPosition: {x: 91.29, y: -25.672, z: 0}
   m_LocalScale: {x: 39.379314, y: 30.392159, z: 1.9399999}
   m_Children: []
   m_Father: {fileID: 935341581}
@@ -759,15 +760,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -953,7 +954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f9080a4b03ce9418a58f1da188f9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects: {fileID: 0}
 --- !u!61 &157544708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1143,6 +1143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 250
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1698476484}
@@ -1329,7 +1330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.75
+  attackSpeed: 0.6
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
 --- !u!114 &270579877
@@ -1346,6 +1347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1797833296}
@@ -1742,15 +1744,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -1810,7 +1812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.75
+  attackSpeed: 0.4
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
 --- !u!114 &334194722
@@ -1827,6 +1829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 572935969}
@@ -2013,7 +2016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.75
+  attackSpeed: 0.4
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
 --- !u!114 &376764102
@@ -2030,6 +2033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1798112702}
@@ -2217,7 +2221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f9080a4b03ce9418a58f1da188f9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects: {fileID: 0}
 --- !u!61 &396117853
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25684,15 +25687,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -25728,8 +25731,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703959971}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.09, y: -15.67, z: 0}
-  m_LocalScale: {x: 31.315556, y: 26.395828, z: 1.94}
+  m_LocalPosition: {x: 17.29, y: -15.67, z: 0}
+  m_LocalScale: {x: 31.628712, y: 26.395828, z: 1.94}
   m_Children: []
   m_Father: {fileID: 935341581}
   m_RootOrder: 1
@@ -25872,7 +25875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.75
+  attackSpeed: 0.5
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
 --- !u!114 &710995698
@@ -25889,6 +25892,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1656854786}
@@ -26075,7 +26079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.5
+  attackSpeed: 0.6
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
 --- !u!114 &712106061
@@ -26092,6 +26096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 250
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 2143277103}
@@ -26398,7 +26403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.75
+  attackSpeed: 0.4
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
 --- !u!114 &835854903
@@ -26415,6 +26420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 32913202}
@@ -26864,15 +26870,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -26991,15 +26997,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -27112,7 +27118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f9080a4b03ce9418a58f1da188f9ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects: {fileID: 0}
 --- !u!61 &977093959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27379,15 +27384,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -148017,15 +148022,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -148119,15 +148124,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -148209,15 +148214,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -148762,15 +148767,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -149115,7 +149120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.5
+  attackSpeed: 0.4
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
 --- !u!114 &1606667973
@@ -149132,6 +149137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 250
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 123195405}
@@ -149318,7 +149324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.5
+  attackSpeed: 0.52
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
 --- !u!114 &1643424700
@@ -149335,6 +149341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 250
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1009419531}
@@ -150297,15 +150304,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -150377,7 +150384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.5
+  attackSpeed: 0.48
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
 --- !u!114 &1719216029
@@ -150394,6 +150401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 250
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1149148941}
@@ -150580,7 +150588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.75
+  attackSpeed: 0.5
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
 --- !u!114 &1720670415
@@ -150597,6 +150605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1873902771}
@@ -150805,15 +150814,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -151212,15 +151221,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -151417,7 +151426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.5
+  attackSpeed: 0.45
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
 --- !u!114 &1949643405
@@ -151434,6 +151443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 250
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1739685451}
@@ -151713,7 +151723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.5
+  attackSpeed: 0.55
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
 --- !u!114 &1978681730
@@ -151730,6 +151740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 250
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 961610739}
@@ -151916,7 +151927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.5
+  attackSpeed: 0.43
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
 --- !u!114 &1981915667
@@ -151933,6 +151944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 250
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1482144857}
@@ -152314,7 +152326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073134100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.75, y: 7.37, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -152406,15 +152418,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
@@ -152588,7 +152600,7 @@ MonoBehaviour:
   voidlings: {fileID: 2302487664290738811, guid: 3bf519b16c5f24f45b646ab95423432e,
     type: 3}
   spawnDuration: 25
-  spawnRate: 4
+  spawnRate: 6
 --- !u!1 &558399765959611528
 GameObject:
   m_ObjectHideFlags: 0
@@ -152704,7 +152716,7 @@ MonoBehaviour:
   voidlings: {fileID: 2302487664290738811, guid: 3bf519b16c5f24f45b646ab95423432e,
     type: 3}
   spawnDuration: 31
-  spawnRate: 3
+  spawnRate: 5
 --- !u!1 &1363214584846825532
 GameObject:
   m_ObjectHideFlags: 0
@@ -152868,7 +152880,7 @@ MonoBehaviour:
   voidlings: {fileID: 3271961353296197649, guid: bf011eeceb9c9384594a1e3ee72945fa,
     type: 3}
   spawnDuration: 25
-  spawnRate: 4
+  spawnRate: 6
 --- !u!1 &2830161684562916985
 GameObject:
   m_ObjectHideFlags: 0
@@ -152983,8 +152995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voidlings: {fileID: 3271961353296197649, guid: bf011eeceb9c9384594a1e3ee72945fa,
     type: 3}
-  spawnDuration: 25
-  spawnRate: 4
+  spawnDuration: 31
+  spawnRate: 6
 --- !u!114 &4473810212092842165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152998,7 +153010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  attackSpeed: 0.75
+  attackSpeed: 0.6
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
 --- !u!114 &4576585151881676004
@@ -153015,6 +153027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
+  dropChance: 0.6
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 95128862}
@@ -153156,15 +153169,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2052555977, guid: bf011eeceb9c9384594a1e3ee72945fa,
         type: 3}
-    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}

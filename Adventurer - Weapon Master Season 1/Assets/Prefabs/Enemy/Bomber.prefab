@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 1
   currentHP: 0
+  dropChance: 0.1
   deathEffect: {fileID: 8890188089654198971, guid: 075dad0ed7baa2848b4d185c710d71e1,
     type: 3}
   healthBar: {fileID: 2417126993302458361}
