@@ -107,6 +107,7 @@
      <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
      <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
      <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
+     <Compile Include="Assets\GetIntoCar.cs" />
      <Compile Include="Assets\ProgressBar.cs" />
      <Compile Include="Assets\Script\Function\CMAddPlayer.cs" />
      <Compile Include="Assets\Script\Function\Data\PersistentData.cs" />

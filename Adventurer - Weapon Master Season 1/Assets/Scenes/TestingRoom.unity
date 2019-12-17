@@ -968,7 +968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopDistance: 10
   retreatDistance: 5
-  speed: 4
+  speed: 5
 --- !u!212 &783420568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12366,6 +12366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 10000
   currentHP: 0
+  dropChance: 0.5
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 829026622}
