@@ -53,7 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraZoom.cs" />
      <Compile Include="Assets\Cinemachine\Base\Runtime\Behaviours\CinemachineBlendListCamera.cs" />
      <Compile Include="Assets\Cinemachine\Base\Runtime\Behaviours\CinemachineBrain.cs" />
      <Compile Include="Assets\Cinemachine\Base\Runtime\Behaviours\CinemachineClearShot.cs" />
@@ -107,7 +106,6 @@
      <Compile Include="Assets\Cinemachine\Timeline\CinemachineMixer.cs" />
      <Compile Include="Assets\Cinemachine\Timeline\CinemachineShot.cs" />
      <Compile Include="Assets\Cinemachine\Timeline\CinemachineTrack.cs" />
-     <Compile Include="Assets\GetIntoCar.cs" />
      <Compile Include="Assets\ProgressBar.cs" />
      <Compile Include="Assets\Script\Function\CMAddPlayer.cs" />
      <Compile Include="Assets\Script\Function\Data\PersistentData.cs" />
@@ -117,12 +115,13 @@
      <Compile Include="Assets\Script\Function\EnemyCount.cs" />
      <Compile Include="Assets\Script\Function\GameHandler.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\Bomber.cs" />
-     <Compile Include="Assets\Script\Gameplay\Enemy\BossMovement.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\Enemy.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\EnemyHealthBar.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\EnemyMelee.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\EnemyMovement.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\EnemyRanged.cs" />
+     <Compile Include="Assets\Script\Gameplay\Enemy\EnemyRotation.cs" />
+     <Compile Include="Assets\Script\Gameplay\Enemy\Invisibility.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\Lava.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\MageVoidling.cs" />
      <Compile Include="Assets\Script\Gameplay\Enemy\VoidlingProjectile.cs" />
@@ -141,6 +140,7 @@
      <Compile Include="Assets\Script\Gameplay\Player\PenetrateProjectile.cs" />
      <Compile Include="Assets\Script\Gameplay\Player\Player.cs" />
      <Compile Include="Assets\Script\Gameplay\Player\PlayerProjectile.cs" />
+     <Compile Include="Assets\Script\Gameplay\Player\Shield.cs" />
      <Compile Include="Assets\Script\UI\LevelLoader.cs" />
      <Compile Include="Assets\Script\UI\MainMenu.cs" />
      <Compile Include="Assets\Script\UI\Map.cs" />

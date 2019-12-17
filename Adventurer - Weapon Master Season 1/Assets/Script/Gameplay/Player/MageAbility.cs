@@ -12,10 +12,15 @@ public class MageAbility : MonoBehaviour
     private Player player;
     [Header("Attack")]
     public float magicForce = 20f;
-    public float attackSpeed = 2f; //how many attacks player can make in a second
+    public float attackSpeed = 1.5f; //how many attacks player can make in a second
     private float timeBtwAttack;
     public float delay = 0.1f;
     public int maxAttack=4;
+    [Header("Shield")]
+    public GameObject shield;
+    public float eCooldown = 8f;
+    [HideInInspector] public float eCooldownLeft;
+    public float eDuration = 3f;
 
     void Start() 
     {
@@ -24,18 +29,27 @@ public class MageAbility : MonoBehaviour
     void Update()
     {
         if(timeBtwAttack<=0)
-        { //attack delay
+        { 
             if(Input.GetMouseButton(0))
             {
-                timeBtwAttack = 1/attackSpeed ; //when you shoot, the timer resets
+                timeBtwAttack = 1/attackSpeed ; 
                 StartCoroutine(MultiShoot(Random.Range(1,maxAttack+1),delay));
             }
         }
-        else timeBtwAttack -= Time.deltaTime;  //attack delay countdown
+        else timeBtwAttack -= Time.deltaTime; 
+        if(eCooldownLeft<=0)
+        {
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                StartCoroutine(Shield(eDuration));
+                eCooldownLeft = eCooldown; 
+            }
+        }
+        else eCooldownLeft -= Time.deltaTime;  
     }
     void Shoot(){
-        GameObject magic = Instantiate(projectile, firePoint.position,firePoint.rotation);
-        Rigidbody2D rb = magic.GetComponent<Rigidbody2D>();
+        GameObject p = Instantiate(projectile, firePoint.position,firePoint.rotation);
+        Rigidbody2D rb = p.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up * magicForce, ForceMode2D.Impulse);
         GameObject effect = Instantiate(shootEffect,firePoint.position,firePoint.rotation);
         Destroy(effect,0.05f);
@@ -49,7 +63,12 @@ public class MageAbility : MonoBehaviour
             yield return new WaitForSeconds(delay);
         }
     }
+    IEnumerator Shield(float duration){
+        shield.SetActive(true);
+        yield return new WaitForSeconds(duration);
+        shield.SetActive(false);
     }        
+}
 
 
 

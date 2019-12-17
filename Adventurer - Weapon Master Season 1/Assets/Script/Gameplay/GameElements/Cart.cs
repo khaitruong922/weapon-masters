@@ -24,6 +24,5 @@ public class Cart: MonoBehaviour
         if(Vector2.Distance(transform.position,winPoint.position) == 0)
         GameHandler.Instance.Win();
     }
-
 }
 
