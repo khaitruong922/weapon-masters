@@ -25,6 +25,7 @@ public class Lava : MonoBehaviour
         {
             t += Time.deltaTime / delay;
             sprite.color = new Color(1f,1f,1f,t);
+            transform.localScale = new Vector3(t,t,t);
             yield return null;          
         }
         //yield return new WaitForSeconds(delay);

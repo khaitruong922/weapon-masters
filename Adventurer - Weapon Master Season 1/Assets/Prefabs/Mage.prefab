@@ -309,7 +309,7 @@ MonoBehaviour:
   shield: {fileID: 600292239}
   eCooldown: 8
   eCooldownLeft: 0
-  eDuration: 3
+  eDuration: 4
 --- !u!58 &2931921704100079037
 CircleCollider2D:
   m_ObjectHideFlags: 0
