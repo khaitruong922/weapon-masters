@@ -117,10 +117,10 @@ public class GunslingerAbility : MonoBehaviour
         GameObject effect = Instantiate(shootEffect,firePoint.position,firePoint.rotation);
         Destroy(effect,0.05f);
     }
-    void Ricochet(){
+    void Ricochet(float x,float y){
         GameObject bullet = Instantiate(qBullet, firePoint.position,firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        rb.AddForce(firePoint.TransformVector(x,y,0) * bulletForce, ForceMode2D.Impulse);
         GameObject effect = Instantiate(shootEffect,firePoint.position,firePoint.rotation);
         Destroy(effect,0.05f);
     }
@@ -136,7 +136,7 @@ public class GunslingerAbility : MonoBehaviour
         
         for (int i=0;i<shots;i++)
         {
-            Ricochet();
+            Ricochet(0f,1f);
             yield return new WaitForSeconds(delay);
         }
     }

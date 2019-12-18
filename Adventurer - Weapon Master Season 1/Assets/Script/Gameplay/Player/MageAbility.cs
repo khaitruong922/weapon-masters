@@ -20,7 +20,8 @@ public class MageAbility : MonoBehaviour
     public GameObject shield;
     public float eCooldown = 8f;
     [HideInInspector] public float eCooldownLeft;
-    public float eDuration = 3f;
+    public float eDuration = 4f;
+    public GameObject lightOrb;
 
     void Start() 
     {
@@ -42,26 +43,40 @@ public class MageAbility : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.E))
             {
                 StartCoroutine(Shield(eDuration));
+                StartCoroutine(LightOrb(eDuration));
                 eCooldownLeft = eCooldown; 
             }
         }
-        else eCooldownLeft -= Time.deltaTime;  
+        else eCooldownLeft -= Time.deltaTime;
     }
-    void Shoot(){
+    void Shoot(float x, float y){
         GameObject p = Instantiate(projectile, firePoint.position,firePoint.rotation);
         Rigidbody2D rb = p.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.up * magicForce, ForceMode2D.Impulse);
+        rb.AddForce(firePoint.TransformVector(x,y,0)* magicForce, ForceMode2D.Impulse);
         GameObject effect = Instantiate(shootEffect,firePoint.position,firePoint.rotation);
         Destroy(effect,0.05f);
     
+    }
+    void LightOrb(float x, float y){
+        GameObject p = Instantiate(lightOrb, transform.position+new Vector3(x,y,0).normalized*2.2f,transform.rotation);
+        Rigidbody2D rb = p.GetComponent<Rigidbody2D>();
+        rb.AddForce(firePoint.TransformVector(x,y,0)* magicForce, ForceMode2D.Impulse);
     }
     IEnumerator MultiShoot(int shots,float delay){
         
         for (int i=0;i<shots;i++)
         {
-            Shoot();
+            Shoot(0f,1f);
             yield return new WaitForSeconds(delay);
         }
+    }
+    IEnumerator LightOrb(float duration){
+        for (float t=0;t<duration;t+=Time.deltaTime){
+            Vector2 dir = new Vector2(Random.Range(-1f,1f),Random.Range(-1f,1f)).normalized;
+            LightOrb(dir.x,dir.y);
+            yield return null;
+        }
+        
     }
     IEnumerator Shield(float duration){
         shield.SetActive(true);

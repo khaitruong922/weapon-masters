@@ -116,7 +116,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.11194539, y: 0}
   serializedVersion: 2
-  m_Radius: 1.5362256
+  m_Radius: 1.6
 --- !u!114 &600292244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,9 +307,11 @@ MonoBehaviour:
   delay: 0.1
   maxAttack: 4
   shield: {fileID: 600292239}
-  eCooldown: 8
+  eCooldown: 10
   eCooldownLeft: 0
   eDuration: 4
+  lightOrb: {fileID: 5976866291929009393, guid: 6f807d2987c386e45b040fb083c03454,
+    type: 3}
 --- !u!58 &2931921704100079037
 CircleCollider2D:
   m_ObjectHideFlags: 0
