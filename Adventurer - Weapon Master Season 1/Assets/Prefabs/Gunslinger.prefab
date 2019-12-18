@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419223515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.203, y: 1.391, z: 0}
+  m_LocalPosition: {x: 0.39, y: 0.87, z: 0}
   m_LocalScale: {x: 0.7612, y: 0.7612, z: 0.7612}
   m_Children: []
   m_Father: {fileID: 4919403630865228076}
@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 588145030761558656}
   - component: {fileID: 4919403630865228074}
   - component: {fileID: 1024408847}
+  - component: {fileID: 945734002}
   m_Layer: 9
   m_Name: Gunslinger
   m_TagString: Player
@@ -184,7 +185,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 7
-  m_Sprite: {fileID: 21300000, guid: 4dfac4fa405efe74796ce87413da5ef7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 979b60df5875e244ba6a48e407e27cd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -225,7 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013a633945f724441a657d40955cd1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 4919403630865228074}
   firePoint: {fileID: 966948187}
   projectile: {fileID: 6110238990113977030, guid: 08bca06bdd0fa7d4eb29ca6aa3ebeffb,
     type: 3}
@@ -284,9 +284,28 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.084085464, y: 0.073820114}
+  m_Offset: {x: -0.016047835, y: -1.0556018}
   serializedVersion: 2
-  m_Radius: 0.46979332
+  m_Radius: 0.68751323
+--- !u!95 &945734002
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4919403630865228079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf455f76ec3a58d48bbe0583d7583720, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1400281296112392903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -307,12 +326,12 @@ PrefabInstance:
     - target: {fileID: 1400281295477025466, guid: 508047aa8a6db13458d78022fc2fd88c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.01
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 1400281295477025466, guid: 508047aa8a6db13458d78022fc2fd88c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.26
+      value: 6.79
       objectReference: {fileID: 0}
     - target: {fileID: 1400281295477025466, guid: 508047aa8a6db13458d78022fc2fd88c,
         type: 3}
@@ -362,12 +381,12 @@ PrefabInstance:
     - target: {fileID: 1400281295477025466, guid: 508047aa8a6db13458d78022fc2fd88c,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: -5.5550036
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 1400281295477025466, guid: 508047aa8a6db13458d78022fc2fd88c,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8098099
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2566695189727345774, guid: 508047aa8a6db13458d78022fc2fd88c,
         type: 3}
