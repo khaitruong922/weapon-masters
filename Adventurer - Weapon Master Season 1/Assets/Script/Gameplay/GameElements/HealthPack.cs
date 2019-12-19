@@ -9,7 +9,7 @@ public class HealthPack : MonoBehaviour
 
     void Start(){
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        Destroy(gameObject,30f);
+        Destroy(gameObject,15f);
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Player"){
