@@ -8,15 +8,15 @@ public class Bomber : MonoBehaviour
     private float damage = 50f;
     private GameObject impactEffect;
     private Enemy enemy;
-    private Player playerHealth;
+    private Player target;
     void Start(){
         enemy = gameObject.GetComponent<Enemy>();
-        playerHealth = FindObjectOfType<Player>();
+        target = FindObjectOfType<Player>();
     }
 
     void OnCollisionEnter2D(Collision2D other) {
     if(other.collider.CompareTag("Player")){ 
-        playerHealth.TakeDamage(damage);
+        target.TakeDamage(damage);
         enemy.currentHP = -1;
     }
 }
