@@ -16,6 +16,11 @@ public class MageAbility : MonoBehaviour
     private float timeBtwAttack;
     public float delay = 0.1f;
     public int maxAttack=4;
+    [Header("Black Hole")]
+    public GameObject blackHole;
+    public float qCooldown = 8f;
+    [HideInInspector] public float qCooldownLeft;
+    public float qDuration = 4f;
     [Header("Shield")]
     public GameObject shield;
     public float eCooldown = 8f;
@@ -38,6 +43,15 @@ public class MageAbility : MonoBehaviour
             }
         }
         else timeBtwAttack -= Time.deltaTime; 
+        if(qCooldownLeft<=0)
+        {
+            if(Input.GetKeyDown(KeyCode.Q))
+            {
+                BlacHole();
+                qCooldownLeft = qCooldown; 
+            }
+        }
+        else qCooldownLeft -= Time.deltaTime;
         if(eCooldownLeft<=0)
         {
             if(Input.GetKeyDown(KeyCode.E))
@@ -48,6 +62,12 @@ public class MageAbility : MonoBehaviour
             }
         }
         else eCooldownLeft -= Time.deltaTime;
+    }
+    void BlacHole(){
+        GameObject p = Instantiate(blackHole, firePoint.position,Quaternion.identity);
+        Rigidbody2D rb = p.GetComponent<Rigidbody2D>();
+        rb.AddForce(firePoint.up* magicForce, ForceMode2D.Impulse);
+   
     }
     void Shoot(float x, float y){
         GameObject p = Instantiate(projectile, firePoint.position,firePoint.rotation);
