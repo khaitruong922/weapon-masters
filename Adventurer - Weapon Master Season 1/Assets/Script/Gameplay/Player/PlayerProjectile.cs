@@ -7,7 +7,6 @@ public class PlayerProjectile : MonoBehaviour
 public GameObject impactEffect;
 public float damage= 20f;
 public float destroyTime = 0.6f;
-private Rigidbody2D rb;
 
 void Start(){
     StartCoroutine("ProjectileTime",destroyTime);

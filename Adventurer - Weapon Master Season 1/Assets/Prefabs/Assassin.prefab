@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6672731197018185462}
   - component: {fileID: 6672731197018185463}
   - component: {fileID: 6672731197018185456}
+  - component: {fileID: 1305656612}
   m_Layer: 9
   m_Name: Assassin
   m_TagString: Player
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6672731197018185458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.04, z: 0}
-  m_LocalScale: {x: 7.5, y: 7.5, z: 7.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6672731198445247181}
   - {fileID: 6672731198376844369}
@@ -118,9 +119,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.03}
+  m_Offset: {x: 0, y: 0.11534214}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.5135835
 --- !u!114 &6672731197018185456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,10 +136,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   speed: 5
-  maxHP: 200
+  maxHP: 1200
   currentHP: 0
   healthBar: {fileID: 0}
   lookDir: {x: 0, y: 0}
+--- !u!114 &1305656612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6672731197018185458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14ad10fdd39043342a1dd7d7c72e248f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 6672731198376844369}
+  projectile: {fileID: 4401688569126756417, guid: 6f9b3e81b0441bc449eb0dc939478903,
+    type: 3}
+  shootEffect: {fileID: 3939188803438828072, guid: a4458cf66e055ac4fbcc42ea2b66cc4d,
+    type: 3}
+  damage: 100
+  attackDelay: 1
+  attackRange: 0.9
+  attackPosition: {fileID: 6672731198445247181}
+  enemyOnly:
+    serializedVersion: 2
+    m_Bits: 1024
+  poisonDamage: 500
+  poisonDuration: 10
+  qDamage: 100
+  qCooldown: 1
+  dashForce: 20
+  dashTime: 0.2
+  projectileSpreadValue: 0.2
+  projectileForce: 20
 --- !u!1 &6672731198376844370
 GameObject:
   m_ObjectHideFlags: 0

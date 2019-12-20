@@ -5,7 +5,7 @@ using UnityEngine;
 public class AssassinAbility : MonoBehaviour
 {
     [Header("Object references")]
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     public Transform firePoint;
     public GameObject projectile;
     public GameObject shootEffect;
@@ -27,11 +27,10 @@ public class AssassinAbility : MonoBehaviour
     [Header("Narrow Escape")]
     public float qDamage = 100f;
     public float qCooldown = 8f;
-    public int numberOfShots = 3;
-    public float dashForce=50f;
+    public float dashForce=20f;
     public float dashTime=0.2f;
-    public float bulletSpreadValue = 0.2f;
-    public float bulletForce = 35f;
+    public float projectileSpreadValue = 0.2f;
+    public float projectileForce = 20f;
     private float qCooldownLeft;
     private float dashTimeLeft;
 
@@ -66,15 +65,15 @@ public class AssassinAbility : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Q))
             {
-                Shoot(0f,1f);
-                Shoot(bulletSpreadValue,1f);
-                Shoot(-bulletSpreadValue,1f);
+                qCooldownLeft = qCooldown;
+                for(float i =-2;i<3;i++){
+                   Shoot(projectileSpreadValue*i,1f);
+                }
                 dashTimeLeft = dashTime;
                 if(dashTimeLeft>=0)
                 {
                     dashTimeLeft -= Time.deltaTime;
                 }
-                qCooldownLeft = qCooldown; 
             }
         }
         else
@@ -98,12 +97,9 @@ public class AssassinAbility : MonoBehaviour
         }
     }
 
-    void Shoot(float x,float y)
-    {
+    void Shoot(float x,float y){
         GameObject bullet = Instantiate(projectile, firePoint.position,firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.TransformVector(x,y,0) * bulletForce, ForceMode2D.Impulse);
-        GameObject effect = Instantiate(shootEffect,firePoint.position,firePoint.rotation);
-        Destroy(effect,0.05f);
+        rb.AddForce(firePoint.TransformVector(x,y,0) * projectileForce, ForceMode2D.Impulse);
     }
 }
