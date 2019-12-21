@@ -28,6 +28,7 @@ public class GameHandler : MonoBehaviour
         StartCoroutine(DelayStop(1));
         if (PersistentData.Instance != null && oneTimeCall == false){
         oneTimeCall = !oneTimeCall; // call function once
+        PersistentData.Instance.level +=1 ;
         }
     }
     public void Defeat(){

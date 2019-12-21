@@ -148529,6 +148529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1426434484}
   - component: {fileID: 1426434485}
+  - component: {fileID: 1426434486}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: Untagged
@@ -148574,6 +148575,20 @@ MonoBehaviour:
   - {fileID: 7002756222995424171, guid: 33056698605f30b4fa1e6bf948f99c74, type: 3}
   defeatScreen: {fileID: 1304355912}
   winScreen: {fileID: 1655110238}
+--- !u!114 &1426434486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426434483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 691aac4fc6bb25f4daf91f937b2f2107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 8496494595951913785, guid: 0a9bc1f402574f74994595341698cb38,
+    type: 3}
 --- !u!1 &1433237398
 GameObject:
   m_ObjectHideFlags: 0

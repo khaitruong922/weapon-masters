@@ -51,6 +51,7 @@ public class AssassinAbility : MonoBehaviour
             if(Input.GetMouseButton(0))
             {
                 anim.SetTrigger("Attack");
+
                 Collider2D[] hitZone = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, enemyOnly);
                 for (int i = 0; i < hitZone.Length; i++)
                 {
