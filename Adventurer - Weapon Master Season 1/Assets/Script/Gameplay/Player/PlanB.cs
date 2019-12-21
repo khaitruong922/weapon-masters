@@ -14,7 +14,6 @@ public class PlanB : MonoBehaviour
 
     private GameObject target;
     private Transform player;
-    private float eAmmoLeft;
     // Start is called before the first frame update
     
     void Start()
@@ -22,7 +21,6 @@ public class PlanB : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         target = GameObject.FindWithTag("Player");
-        eAmmoLeft = target.GetComponent<AssassinAbility>().eAmmoLeft;
 
         player = FindObjectOfType<Player>().GetComponent<Transform>();    
     }
@@ -36,7 +34,7 @@ public class PlanB : MonoBehaviour
             {
                 Kunai(0f,1f);
                 timeBtwAttack = 1/attackSpeed;
-                eAmmoLeft -= 1;
+                AssassinAbility.eAmmoLeft -= 1;
             }
         }
         else

@@ -37,10 +37,10 @@ public class AssassinAbility : MonoBehaviour
     [Header("Plan B")]
     public float eDamage = 100f;
     public float eCooldown = 3f;
-    public int eAmmo = 10;
+    public static int eAmmo = 10;
     private float eCooldownLeft;
     [HideInInspector]
-    public float eAmmoLeft;
+    public static float eAmmoLeft;
 
 
     // Start is called before the first frame update

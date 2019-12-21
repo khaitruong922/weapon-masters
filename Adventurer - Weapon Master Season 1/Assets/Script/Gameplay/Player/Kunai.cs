@@ -11,21 +11,18 @@ public class Kunai : MonoBehaviour
     
     private GameObject target;
     private Transform player;
-    private float eAmmoLeft;
 
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindWithTag("Player");
-        eAmmoLeft = target.GetComponent<AssassinAbility>().eAmmoLeft;
-
         player = FindObjectOfType<Player>().GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {  
-        if(eAmmoLeft <= 0)
+        if(AssassinAbility.eAmmoLeft <= 0)
         {
             transform.position = Vector2.MoveTowards(transform.position,player.position,returnSpeed*Time.deltaTime);
             if (transform.position == player.position)
