@@ -33,7 +33,7 @@ public class Golem : MonoBehaviour
            // Check if enough time have passed since the last attack so that it can attack again
                 if (timeBtwAttack <= 0)
                 {
-                    Attack();
+                    StartCoroutine(Attack(attackDelay,damage));
                     timeBtwAttack = 1 / attackSpeed;
                 }
                 else
@@ -43,8 +43,9 @@ public class Golem : MonoBehaviour
             }
        }
     }
-    private void Attack(){
+    private IEnumerator Attack(float delay,float damage){
         anim.SetTrigger("Attack");
+        yield return new WaitForSeconds(delay);
         Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position,radius,playerLayer);
         foreach(Collider2D player in hitPlayers)
         {

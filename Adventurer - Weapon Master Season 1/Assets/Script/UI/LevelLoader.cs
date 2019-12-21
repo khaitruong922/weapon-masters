@@ -11,13 +11,16 @@ public class LevelLoader : MonoBehaviour
     public void LoadLevel ()
     {
         StartCoroutine("LoadAsynchronously");
+        Play("GunReload");
         
     }
     public void MapSelect(int mapNumber){
         PlayerPrefs.SetInt("MapNumber",mapNumber);
+        Play("OpenMap");
     }
     public void CharSelect(int charNumber){
         PlayerPrefs.SetInt("CharNumber",charNumber);
+        Play("Click");
     }
 
     IEnumerator LoadAsynchronously ()
@@ -34,5 +37,10 @@ public class LevelLoader : MonoBehaviour
     }
     public void Back(){
         SceneManager.LoadSceneAsync(0,LoadSceneMode.Single);
+        Play("Click");
+    }
+    public void Play(string name){
+        AudioManager.Instance.Play(name);
     }
 }
+

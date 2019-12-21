@@ -13,11 +13,11 @@ public class AssassinAbility : MonoBehaviour
     
     [Header("Attack")]
     public float damage = 100f;
-    public float attackDelay = 1f;
+    private float timeBtwAttack;
+    public float attackSpeed = 2.5f;
     public float attackRange = 10f;
     public Transform attackPosition;
     public LayerMask enemyOnly;
-    private float attackDelayLeft;
 
     [Header("Poison Blade")]
     public float poisonDamage = 500f;
@@ -45,7 +45,7 @@ public class AssassinAbility : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(attackDelayLeft <= 0)
+        if(timeBtwAttack <= 0)
         {
             if(Input.GetMouseButton(0))
             {
@@ -53,13 +53,13 @@ public class AssassinAbility : MonoBehaviour
                 for (int i = 0; i < hitZone.Length; i++)
                 {
                     hitZone[i].GetComponent<Enemy>().TakeDamage(damage);
-                    attackDelayLeft = attackDelay;
+                    timeBtwAttack = 1/attackSpeed;
                 }
             }
         }
         else
         {
-            attackDelayLeft -= Time.deltaTime;
+            timeBtwAttack -= Time.deltaTime;
         }     
         if(qCooldownLeft<=0)
         {
