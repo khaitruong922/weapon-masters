@@ -16,11 +16,11 @@ public class LevelLoader : MonoBehaviour
     }
     public void MapSelect(int mapNumber){
         PlayerPrefs.SetInt("MapNumber",mapNumber);
-        Play("OpenMap");
+        Play("Map");
     }
     public void CharSelect(int charNumber){
         PlayerPrefs.SetInt("CharNumber",charNumber);
-        Play("Click");
+        Play("CharSelect");
     }
 
     IEnumerator LoadAsynchronously ()

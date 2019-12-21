@@ -1946,6 +1946,7 @@ GameObject:
   - component: {fileID: 1101418175}
   - component: {fileID: 1101418177}
   - component: {fileID: 1101418176}
+  - component: {fileID: 1101418178}
   m_Layer: 0
   m_Name: Path
   m_TagString: Untagged
@@ -9727,6 +9728,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &1101418178
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101418174}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80aaedc45e7d44e4683ea2366fecafa6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1105063665
 GameObject:
   m_ObjectHideFlags: 0
@@ -11315,15 +11335,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672731197018185456, guid: 3f5f9b825d68f524384fd3adc65e7b8e,
-        type: 3}
-      propertyPath: speed
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1305656612, guid: 3f5f9b825d68f524384fd3adc65e7b8e, type: 3}
-      propertyPath: projectileSpreadValue
-      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f5f9b825d68f524384fd3adc65e7b8e, type: 3}

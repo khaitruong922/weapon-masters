@@ -1669,8 +1669,44 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: OpenMap
+  - name: Map
     clip: {fileID: 8300000, guid: c9d2afdb158708f4aa1d9790b6b271c1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GunReload
+    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: CharSelect
+    clip: {fileID: 8300000, guid: 7f7b584ac125e3b47ba5cce0f16fc572, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GunReload
+    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GunReload
+    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GunReload
+    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GunReload
+    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
     volume: 1
     pitch: 1
     loop: 0

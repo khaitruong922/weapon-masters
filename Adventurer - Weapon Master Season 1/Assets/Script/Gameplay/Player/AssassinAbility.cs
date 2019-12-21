@@ -6,10 +6,10 @@ public class AssassinAbility : MonoBehaviour
 {
     [Header("Object references")]
     private Rigidbody2D rb;
-    public Transform firePoint;
     public GameObject projectile;
     public GameObject shootEffect;
     private Player player;
+    private Animator anim;
     
     [Header("Attack")]
     public float damage = 100f;
@@ -38,6 +38,7 @@ public class AssassinAbility : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GetComponent<Player>(); 
     }
@@ -49,6 +50,7 @@ public class AssassinAbility : MonoBehaviour
         {
             if(Input.GetMouseButton(0))
             {
+                anim.SetTrigger("Attack");
                 Collider2D[] hitZone = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, enemyOnly);
                 for (int i = 0; i < hitZone.Length; i++)
                 {
@@ -98,8 +100,8 @@ public class AssassinAbility : MonoBehaviour
     }
 
     void Shoot(float x,float y){
-        GameObject bullet = Instantiate(projectile, firePoint.position,firePoint.rotation);
+        GameObject bullet = Instantiate(projectile, attackPosition.position,attackPosition.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(firePoint.TransformVector(x,y,0) * projectileForce, ForceMode2D.Impulse);
+        rb.AddForce(attackPosition.TransformVector(x,y,0) * projectileForce, ForceMode2D.Impulse);
     }
 }
