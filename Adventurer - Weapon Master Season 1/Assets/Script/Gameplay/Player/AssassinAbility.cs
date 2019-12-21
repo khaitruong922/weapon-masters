@@ -34,22 +34,13 @@ public class AssassinAbility : MonoBehaviour
     private float qCooldownLeft;
     private float dashTimeLeft;
 
-    [Header("Plan B")]
-    public float eDamage = 100f;
-    public float eCooldown = 3f;
-    public static int eAmmo = 10;
-    private float eCooldownLeft;
-    [HideInInspector]
-    public static float eAmmoLeft;
-
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        player = GetComponent<Player>();
-        eAmmoLeft = eAmmo; 
+        player = GetComponent<Player>(); 
     }
 
     // Update is called once per frame
@@ -71,8 +62,7 @@ public class AssassinAbility : MonoBehaviour
         else
         {
             timeBtwAttack -= Time.deltaTime;
-        }
-
+        }     
         if(qCooldownLeft<=0)
         {
             if(Input.GetKeyDown(KeyCode.Q))
@@ -91,23 +81,6 @@ public class AssassinAbility : MonoBehaviour
         else
         {
             qCooldownLeft -= Time.deltaTime;
-        }
-
-        if (eCooldownLeft <= 0 && eAmmoLeft > 0)
-        {
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                eCooldownLeft = eCooldown;
-                transform.GetChild(1).gameObject.SetActive(true);
-                if (eAmmoLeft <= 0)
-                {
-                    transform.GetChild(1).gameObject.SetActive(false);
-                }
-            }
-        }
-        else
-        {
-            eCooldownLeft -= Time.deltaTime;
         }
     }
     
