@@ -38,6 +38,7 @@ public class MageAbility : MonoBehaviour
             if(Input.GetMouseButton(0))
             {
                 timeBtwAttack = 1/attackSpeed ; 
+                AudioManager.Instance.Play("MageAttack");
                 StartCoroutine(MultiShoot(Random.Range(1,maxAttack+1),delay));
             }
         }
@@ -63,12 +64,14 @@ public class MageAbility : MonoBehaviour
         else eCooldownLeft -= Time.deltaTime;
     }
     void BlackHole(){
+        AudioManager.Instance.Play("FiringBlackHole");
         GameObject p = Instantiate(blackHole, firePoint.position,Quaternion.identity);
         Rigidbody2D rb = p.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.up* magicForce, ForceMode2D.Impulse);
    
     }
     void Shoot(float x, float y){
+        
         GameObject p = Instantiate(projectile, firePoint.position,firePoint.rotation);
         Rigidbody2D rb = p.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.TransformVector(x,y,0)* magicForce, ForceMode2D.Impulse);
@@ -99,6 +102,7 @@ public class MageAbility : MonoBehaviour
     }
     IEnumerator Shield(float duration){
         shield.SetActive(true);
+        AudioManager.Instance.Play("Shield");
         yield return new WaitForSeconds(duration);
         shield.SetActive(false);
     }        

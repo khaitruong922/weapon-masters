@@ -1608,9 +1608,8 @@ GameObject:
   m_Component:
   - component: {fileID: 932541178}
   - component: {fileID: 932541177}
-  - component: {fileID: 932541179}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: Persistent Data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1644,79 +1643,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &932541179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 932541176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36a82f228325d274f8a2c3a7a1c63852, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Theme1
-    clip: {fileID: 8300000, guid: 988d2e1371ea2ac49a7269548fc9bf80, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Click
-    clip: {fileID: 8300000, guid: 96e91974464b91448b54dc577995cb46, type: 3}
-    volume: 0.5
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Map
-    clip: {fileID: 8300000, guid: c9d2afdb158708f4aa1d9790b6b271c1, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: GunReload
-    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: CharSelect
-    clip: {fileID: 8300000, guid: 7f7b584ac125e3b47ba5cce0f16fc572, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: GunReload
-    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: GunReload
-    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: GunReload
-    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: GunReload
-    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: GunReload
-    clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
 --- !u!1 &967048217
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,3 +3555,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119462485}
   m_CullTransparentMesh: 0
+--- !u!1001 &8496494595876189186
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8496494595951913785, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_Name
+      value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3763307
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10531129
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.080981016
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496494595951913791, guid: 0a9bc1f402574f74994595341698cb38,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a9bc1f402574f74994595341698cb38, type: 3}

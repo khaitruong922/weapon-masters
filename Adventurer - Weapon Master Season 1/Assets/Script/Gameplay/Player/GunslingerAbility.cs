@@ -56,6 +56,7 @@ public class GunslingerAbility : MonoBehaviour
                 if (attackCounter < attackNeeded)
                 {
                     Shoot(0f,1f);
+                    AudioManager.Instance.Play("Shoot");
                 }
                 else //passive: every 3 attacks, gunslinger will shoot 3 bullets in a cone.
                 {
@@ -63,6 +64,7 @@ public class GunslingerAbility : MonoBehaviour
                     Shoot(0f,1f);
                     Shoot(bulletSpreadValue,1f);
                     Shoot(-bulletSpreadValue,1f);
+                    AudioManager.Instance.Play("TripleShoot");
                 }
             }
         }
@@ -137,11 +139,13 @@ public class GunslingerAbility : MonoBehaviour
         for (int i=0;i<shots;i++)
         {
             Ricochet(0f,1f);
+            AudioManager.Instance.Play("Shoot");
             yield return new WaitForSeconds(delay);
         }
     }
     IEnumerator Laser(float duration){
         laser.SetActive(true);
+        AudioManager.Instance.Play("Laser");
         yield return new WaitForSeconds(duration);
         laser.SetActive(false);
     }

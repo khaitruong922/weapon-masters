@@ -27,6 +27,7 @@ public class BlackHole : MonoBehaviour
         }
     }
     private void Activate(){
+        AudioManager.Instance.Play("BlackHole");
         StartCoroutine(Activate(delay));
         rb.velocity=new Vector2(0,0);
     }
