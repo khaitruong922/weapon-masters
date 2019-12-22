@@ -12,6 +12,7 @@ public class AssassinAbility : MonoBehaviour
     private Animator anim;
     
     [Header("Attack")]
+    private bool attack = true;
     public float damage = 100f;
     private float timeBtwAttack;
     public float attackSpeed = 2.5f;
@@ -34,36 +35,47 @@ public class AssassinAbility : MonoBehaviour
     private float qCooldownLeft;
     private float dashTimeLeft;
 
+    [Header("Plan B")]
+    public float eDamage = 100f;
+    public float eReloadTime = 3f;
+    public int eAmmo = 10;
+    private float eReloadTimeLeft;
+    private float eAmmoLeft;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        player = GetComponent<Player>(); 
+        player = GetComponent<Player>();
+        eAmmoLeft = eAmmo;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timeBtwAttack <= 0)
+        if (attack == true)
         {
-            if(Input.GetMouseButton(0))
+            if(timeBtwAttack <= 0)
             {
-                anim.SetTrigger("Attack");
-
-                Collider2D[] hitZone = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, enemyOnly);
-                for (int i = 0; i < hitZone.Length; i++)
+                if(Input.GetMouseButton(0))
                 {
-                    hitZone[i].GetComponent<Enemy>().TakeDamage(damage);
-                    timeBtwAttack = 1/attackSpeed;
+                    anim.SetTrigger("Attack");
+
+                    Collider2D[] hitZone = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, enemyOnly);
+                    for (int i = 0; i < hitZone.Length; i++)
+                    {
+                        hitZone[i].GetComponent<Enemy>().TakeDamage(damage);
+                        timeBtwAttack = 1/attackSpeed;
+                    }
                 }
             }
-        }
-        else
-        {
-            timeBtwAttack -= Time.deltaTime;
+            else
+            {
+                timeBtwAttack -= Time.deltaTime;
+            }
         }     
+        
         if(qCooldownLeft<=0)
         {
             if(Input.GetKeyDown(KeyCode.Q))
@@ -82,6 +94,32 @@ public class AssassinAbility : MonoBehaviour
         else
         {
             qCooldownLeft -= Time.deltaTime;
+        }
+
+        if(eAmmoLeft > 0)
+        {
+            if(Input.GetKeyDown(KeyCode.E))
+            {
+                if(timeBtwAttack <= 0)
+                {
+                    attack = false;
+                    Shoot(0f,1f);
+                    eAmmoLeft -= 1;
+                }
+            }
+        }
+        else
+        {
+            attack = true;
+            if(eReloadTimeLeft <= 0)
+            {
+                eAmmoLeft = eAmmo;
+                eReloadTimeLeft = eReloadTime;
+            }
+            else
+            {
+                eReloadTimeLeft -= Time.deltaTime;
+            }
         }
     }
     
