@@ -99,7 +99,7 @@ MonoBehaviour:
   rb: {fileID: 2575835495529818649}
   impactEffect: {fileID: 7563920255829860475, guid: 7a594bfaba17cc247a26d5ea6086c6a1,
     type: 3}
-  damage: 30
+  damage: 20
 --- !u!50 &2575835495529818649
 Rigidbody2D:
   serializedVersion: 4
