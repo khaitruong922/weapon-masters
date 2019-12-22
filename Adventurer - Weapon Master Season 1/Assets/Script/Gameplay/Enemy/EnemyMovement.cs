@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Transform target;
+    private Transform target;
     public float speed = 1f;
     public float stopDistance = 3f;
     public float retreatDistance = 2f;

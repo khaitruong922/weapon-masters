@@ -52,13 +52,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Click
     clip: {fileID: 8300000, guid: 96e91974464b91448b54dc577995cb46, type: 3}
-    volume: 0.5
+    volume: 0.05
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Map
     clip: {fileID: 8300000, guid: c9d2afdb158708f4aa1d9790b6b271c1, type: 3}
-    volume: 1
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -70,13 +70,13 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CharSelect
     clip: {fileID: 8300000, guid: 7f7b584ac125e3b47ba5cce0f16fc572, type: 3}
-    volume: 1
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: GunReload
     clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 1
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -100,25 +100,25 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Shield
     clip: {fileID: 8300000, guid: c0e51a0a69f67324fbcbcc5455ae641e, type: 3}
-    volume: 0.367
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: BlackHole
     clip: {fileID: 8300000, guid: 6e17ad01491c0c940994f40d3d80ae5f, type: 3}
-    volume: 0.2
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: MageAttack
     clip: {fileID: 8300000, guid: 3ac96068b06105449a266ece85ccfb3d, type: 3}
-    volume: 0.367
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: FiringBlackHole
     clip: {fileID: 8300000, guid: 10a4b938495876a46a03c5bf6548677a, type: 3}
-    volume: 0.367
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -134,3 +134,4 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  audioMixer: {fileID: 24300002, guid: c83f3f3e0896f4845963f5318296af28, type: 2}
