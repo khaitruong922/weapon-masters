@@ -279,8 +279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
-  speed: 4
-  maxHP: 800
+  speed: 4.5
+  maxHP: 900
   currentHP: 0
   healthBar: {fileID: 0}
   lookDir: {x: 0, y: 0}
@@ -303,16 +303,15 @@ MonoBehaviour:
   shootEffect: {fileID: 5489396285865394607, guid: da30c144f2b24ce40935073b96147d91,
     type: 3}
   magicForce: 20
-  attackSpeed: 1.5
+  attackSpeed: 1.75
   delay: 0.1
   maxAttack: 4
   blackHole: {fileID: 5532814014502037392, guid: ec78f6bea6b409d41af6a5641a2d7cde,
     type: 3}
-  qCooldown: 8
+  qCooldown: 7
   qCooldownLeft: 0
-  qDuration: 4
   shield: {fileID: 600292239}
-  eCooldown: 12
+  eCooldown: 10
   eCooldownLeft: 0
   eDuration: 4
   lightOrb: {fileID: 5976866291929009393, guid: 6f807d2987c386e45b040fb083c03454,

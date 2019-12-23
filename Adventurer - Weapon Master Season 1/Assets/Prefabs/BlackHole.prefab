@@ -4892,7 +4892,7 @@ MonoBehaviour:
   delay: 0.75
   damagePerSecond: 100
   lifetime: 4
-  sizeIncrease: 5
+  sizeIncrease: 7
   pullForce: 3
 --- !u!95 &1677524895
 Animator:
