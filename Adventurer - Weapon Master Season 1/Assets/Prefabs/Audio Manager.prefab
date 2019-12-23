@@ -76,7 +76,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: GunReload
     clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 0.1
+    volume: 0.02
     pitch: 1
     loop: 0
     source: {fileID: 0}

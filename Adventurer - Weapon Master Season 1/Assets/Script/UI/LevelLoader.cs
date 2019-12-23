@@ -25,7 +25,7 @@ public class LevelLoader : MonoBehaviour
 
     IEnumerator LoadAsynchronously ()
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("MapNumber")+1);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(PlayerPrefs.GetInt("MapNumber")+2);
 
         loadingScreen.SetActive(true);
         while (!operation.isDone)

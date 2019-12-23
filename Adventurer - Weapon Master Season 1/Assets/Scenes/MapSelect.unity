@@ -1272,7 +1272,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2937,6 +2937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   map:
+  - {fileID: 11400000, guid: fde56bbc4f121e54abac45e900466dc1, type: 2}
   - {fileID: 11400000, guid: 2f2b7f67d91659e47ab753a0a5f89bc0, type: 2}
   - {fileID: 11400000, guid: aa31c005a1370d04483dda1cdc214624, type: 2}
   - {fileID: 11400000, guid: 2f031144e07f5d7499392e595c66a738, type: 2}
