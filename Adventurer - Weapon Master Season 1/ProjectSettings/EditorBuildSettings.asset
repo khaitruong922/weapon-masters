@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Payload 2.unity
     guid: 1547ab75b674d3347a6cbc3db1d98147
   - enabled: 1
+    path: Assets/Scenes/Invasion 3.unity
+    guid: 2fd4adb3b8795494fb45d74cce29f59a
+  - enabled: 1
     path: Assets/Scenes/Payload 4.unity
     guid: 4c2a2518b1beb724eb19ec6608e34e8f
   m_configObjects: {}

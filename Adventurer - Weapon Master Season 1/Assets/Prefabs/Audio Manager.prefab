@@ -46,7 +46,7 @@ MonoBehaviour:
   sounds:
   - name: Theme1
     clip: {fileID: 8300000, guid: 988d2e1371ea2ac49a7269548fc9bf80, type: 3}
-    volume: 0.1
+    volume: 0.3
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -64,7 +64,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: GunReload
     clip: {fileID: 8300000, guid: ef5d004502037b64f929b3fc00e12b5d, type: 3}
-    volume: 1
+    volume: 0.1
     pitch: 1
     loop: 0
     source: {fileID: 0}

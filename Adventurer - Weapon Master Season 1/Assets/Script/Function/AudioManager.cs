@@ -45,10 +45,11 @@ public class AudioManager : MonoBehaviour
 			return;
 		}
 	}
-	public void ChangeAudio(AudioClip clip,bool loop){
+	public void ChangeAudio(AudioClip clip,bool loop,float volume){
 		sounds[0].source.clip = clip;
 		sounds[0].source.loop = loop;
 		sounds[0].source.Play();
+		sounds[0].source.volume= volume;
 	}
 	
 }

@@ -12,12 +12,13 @@ public class GameHandler : MonoBehaviour
     public GameObject winScreen;
     public static GameHandler Instance {get;set;}
     bool oneTimeCall = false;
-    public int mapNumber = 0;
+    [Header("Game Theme")]
     public AudioClip clip;
+    public float volume;
 
     void Awake() {
-        if(AudioManager.Instance != null && AudioManager.Instance.sounds[0].clip != clip){
-            AudioManager.Instance.ChangeAudio(clip,true);
+        if(AudioManager.Instance != null && AudioManager.Instance.sounds[0].clip != clip && clip != null){
+            AudioManager.Instance.ChangeAudio(clip,true,0.1f);
         }
         Instance = this;
         defeatScreen.SetActive(false);

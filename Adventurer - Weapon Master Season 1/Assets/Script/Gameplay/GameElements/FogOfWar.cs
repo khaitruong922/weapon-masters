@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class FogOfWar : MonoBehaviour
 {
-    public SpriteRenderer fogOfWar;
+    private SpriteRenderer fogOfWar;
     void Start(){
-        fogOfWar = gameObject.GetComponent<SpriteRenderer>();
+        fogOfWar = GetComponent<SpriteRenderer>();
     }
     void OnTriggerEnter2D(Collider2D player){
         if (player.gameObject.tag == "Player"){

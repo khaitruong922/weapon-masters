@@ -174,7 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.6
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
@@ -1124,7 +1123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.5
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
@@ -1327,7 +1325,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.6
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
@@ -1808,7 +1805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.4
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
@@ -2011,7 +2007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.4
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
@@ -25869,7 +25864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.5
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
@@ -26072,7 +26066,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.6
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
@@ -26395,7 +26388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.4
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
@@ -148567,6 +148559,8 @@ MonoBehaviour:
   - {fileID: 7002756222995424171, guid: 33056698605f30b4fa1e6bf948f99c74, type: 3}
   defeatScreen: {fileID: 1304355912}
   winScreen: {fileID: 1655110238}
+  clip: {fileID: 0}
+  volume: 0
 --- !u!114 &1426434486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149126,7 +149120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.4
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
@@ -149329,7 +149322,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.52
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
@@ -150388,7 +150380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.48
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
@@ -150591,7 +150582,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.5
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
@@ -151428,7 +151418,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.45
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
@@ -151724,7 +151713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.55
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
@@ -151927,7 +151915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.43
   projectile: {fileID: 5166460637364340135, guid: 9dbce1f5c1cfc204688e8714e1c45648,
     type: 3}
@@ -152257,7 +152244,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 1
+  m_UpdateMethod: 2
   m_DefaultBlend:
     m_Style: 1
     m_Time: 2
@@ -153009,7 +152996,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.6
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}
