@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class EnemyRanged: MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Transform target;
-    private Player targetHealth;
     private float timeBtwAttack;
     public float attackSpeed=1f;
     public GameObject projectile;

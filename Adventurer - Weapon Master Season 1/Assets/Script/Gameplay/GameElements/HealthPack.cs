@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class HealthPack : MonoBehaviour
 {
-    private Player playerHealth;
     public float healAmount =1f;
-
     void Start(){
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        Destroy(gameObject,15f);
+        Destroy(gameObject,20f);
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Player"){
-            playerHealth.Heal(healAmount);
-        Destroy(gameObject);
+            other.gameObject.GetComponent<Player>().Heal(healAmount);
+            Destroy(gameObject);
         }
     }
+    
 }
