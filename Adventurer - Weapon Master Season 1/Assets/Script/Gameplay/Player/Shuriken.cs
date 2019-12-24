@@ -8,6 +8,7 @@ public GameObject impactEffect;
 public float damage= 50f;
 public float returnTime = 1f;
 public float returnSpeed = 50f;
+public float anglePerSecond = 120f;
 private Transform player;
 
 void Start(){

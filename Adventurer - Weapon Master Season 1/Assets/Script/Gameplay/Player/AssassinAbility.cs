@@ -28,19 +28,18 @@ public class AssassinAbility : MonoBehaviour
     [Header("Narrow Escape")]
     public float qDamage = 100f;
     public float qCooldown = 8f;
-    public float dashForce=20f;
-    public float dashTime=0.2f;
+    //public float dashForce=20f;
+    //public float dashTime=0.2f;
     public float projectileSpreadValue = 0.2f;
     public float projectileForce = 20f;
     private float qCooldownLeft;
     private float dashTimeLeft;
+    [Header("Dash")]
+    public float eCooldown = 2f;
+    [HideInInspector] public float eCooldownLeft;
+    public float dashTime = 0.2f;
+    public float dashForce = 40f;
 
-    [Header("Plan B")]
-    public float eDamage = 100f;
-    public float eReloadTime = 3f;
-    public int eAmmo = 10;
-    private float eReloadTimeLeft;
-    private float eAmmoLeft;
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +47,6 @@ public class AssassinAbility : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = GetComponent<Player>();
-        eAmmoLeft = eAmmo;
     }
 
     // Update is called once per frame
@@ -83,8 +81,19 @@ public class AssassinAbility : MonoBehaviour
                 qCooldownLeft = qCooldown;
                 for(float i =-2;i<3;i++){
                    Shoot(projectileSpreadValue*i,1f);
-                }
+                }   
+            }
+        }
+        else
+        {
+            qCooldownLeft -= Time.deltaTime;
+        }
+        if(eCooldownLeft<=0)
+        {
+            if(Input.GetKeyDown(KeyCode.E))
+            {
                 dashTimeLeft = dashTime;
+                eCooldownLeft = eCooldown;
                 if(dashTimeLeft>=0)
                 {
                     dashTimeLeft -= Time.deltaTime;
@@ -93,34 +102,10 @@ public class AssassinAbility : MonoBehaviour
         }
         else
         {
-            qCooldownLeft -= Time.deltaTime;
+            eCooldownLeft -= Time.deltaTime;
         }
 
-        if(eAmmoLeft > 0)
-        {
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                if(timeBtwAttack <= 0)
-                {
-                    attack = false;
-                    Shoot(0f,1f);
-                    eAmmoLeft -= 1;
-                }
-            }
-        }
-        else
-        {
-            attack = true;
-            if(eReloadTimeLeft <= 0)
-            {
-                eAmmoLeft = eAmmo;
-                eReloadTimeLeft = eReloadTime;
-            }
-            else
-            {
-                eReloadTimeLeft -= Time.deltaTime;
-            }
-        }
+       
     }
     
     void OnDrawGizmosSelected() //hitZone radius checker (Scene only)
@@ -133,10 +118,11 @@ public class AssassinAbility : MonoBehaviour
     {
         if(dashTimeLeft>=0)
         {
-            rb.AddForce(-player.lookDir.normalized * dashForce,ForceMode2D.Impulse);
+            rb.AddForce(player.lookDir.normalized * dashForce,ForceMode2D.Impulse);
             dashTimeLeft -= Time.fixedDeltaTime;
         }
     }
+    
 
     void Shoot(float x,float y){
         GameObject bullet = Instantiate(projectile, attackPosition.position,attackPosition.rotation);

@@ -10,7 +10,7 @@ public class Bomber : MonoBehaviour
     private Enemy enemy;
     private Player target;
     void Start(){
-        enemy = gameObject.GetComponent<Enemy>();
+        enemy = GetComponent<Enemy>();
         target = FindObjectOfType<Player>();
     }
 

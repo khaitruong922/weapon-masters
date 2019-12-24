@@ -41,8 +41,8 @@ GameObject:
   - component: {fileID: 4401688569126756418}
   - component: {fileID: 4401688569126756419}
   - component: {fileID: 3959692910247010562}
-  - component: {fileID: 5203595960384218752}
   - component: {fileID: 4401688569126756416}
+  - component: {fileID: 58055959143905246}
   m_Layer: 0
   m_Name: Shuriken
   m_TagString: Untagged
@@ -102,7 +102,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: e93fd3a134712d14c9058288af3f52ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9e5fa78367e2cc340821aaa4be80ab58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -134,22 +134,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &5203595960384218752
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4401688569126756417}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0010026544, y: -0.007323414}
-  serializedVersion: 2
-  m_Radius: 0.159941
 --- !u!114 &4401688569126756416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,3 +151,20 @@ MonoBehaviour:
   damage: 50
   returnTime: 1
   returnSpeed: 50
+  anglePerSecond: 120
+--- !u!58 &58055959143905246
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4401688569126756417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5

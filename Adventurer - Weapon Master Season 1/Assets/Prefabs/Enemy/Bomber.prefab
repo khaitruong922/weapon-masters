@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3589165643335884533}
   - component: {fileID: 3589165643335884531}
   - component: {fileID: 50753147912558056}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Bomber
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -153,7 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953720a9f0b1f1a489ca56477f2ac455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   speed: 6
   stopDistance: 0
   retreatDistance: 0
@@ -278,15 +277,15 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 3589165643335884534}
-    - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 51
-      objectReference: {fileID: 0}
     - target: {fileID: 916945925910963963, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
       propertyPath: m_SortingOrder
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 916945925427966158, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 916945927042757679, guid: 82fa9a0e0bd7aa74bbb8d623a1975428,
         type: 3}
