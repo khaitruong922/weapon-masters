@@ -182,6 +182,8 @@ MonoBehaviour:
   healthBar: {fileID: 5609180965672395477}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &1141318589
 MonoBehaviour:
   m_ObjectHideFlags: 0

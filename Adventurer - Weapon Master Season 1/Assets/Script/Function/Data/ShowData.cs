@@ -6,6 +6,7 @@ using TMPro;
 public class ShowData : MonoBehaviour
 {
    public TextMeshProUGUI data;
+   public string preText;
    public string dataType="Level";
    private void Start()
    {
@@ -13,12 +14,12 @@ public class ShowData : MonoBehaviour
        {
            case "Level":
            {
-               data.text="Level: " + PersistentData.Instance.level.ToString();
+               data.text=preText + PersistentData.Instance.level.ToString();
                break;
            }
            case "Name":
            {
-                data.text="Name: "+ PersistentData.Instance.playerName;
+                data.text=preText+ PersistentData.Instance.playerName;
                 break;
            }
        }

@@ -21,15 +21,12 @@ public class AssassinAbility : MonoBehaviour
     public LayerMask enemyOnly;
 
     [Header("Poison Blade")]
-    public float poisonDamage = 500f;
-    public float poisonDuration = 10f;
-    private float poisonDurationLeft;
+    public float damagePerTick= 200f;
+    public float frequency = 0.25f;
+    public int numberOfTicks = 8;
 
     [Header("Narrow Escape")]
-    public float qDamage = 100f;
     public float qCooldown = 8f;
-    //public float dashForce=20f;
-    //public float dashTime=0.2f;
     public float projectileSpreadValue = 0.2f;
     public float projectileForce = 20f;
     private float qCooldownLeft;
@@ -64,6 +61,7 @@ public class AssassinAbility : MonoBehaviour
                     for (int i = 0; i < hitZone.Length; i++)
                     {
                         hitZone[i].GetComponent<Enemy>().TakeDamage(damage);
+                        hitZone[i].GetComponent<Enemy>().TakeDamageOverTime(damagePerTick,frequency,numberOfTicks);
                         timeBtwAttack = 1/attackSpeed;
                     }
                 }
@@ -122,8 +120,6 @@ public class AssassinAbility : MonoBehaviour
             dashTimeLeft -= Time.fixedDeltaTime;
         }
     }
-    
-
     void Shoot(float x,float y){
         GameObject bullet = Instantiate(projectile, attackPosition.position,attackPosition.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();

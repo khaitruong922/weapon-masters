@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Enemy : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Enemy : MonoBehaviour
     public GameObject deathEffect;
     public GameObject healthBar; //access to the health bar
     public GameObject healthPack;
+    public GameObject textPrefab;
     EnemyHealthBar enemyHealthBar;// access to health bar script
 
 
@@ -27,7 +29,22 @@ public class Enemy : MonoBehaviour
         currentHP -= damage; //health is decreased by damage dealt.
         EnemyHealthBar enemyHealthBar = healthBar.GetComponent<EnemyHealthBar>();
         enemyHealthBar.SetSize(PercentHP());
+        ShowFloatingText(damage);
         }
+    public void TakeDamageOverTime(float damagePerTick,float frequency,int numberOfTicks){
+        StartCoroutine(DamageOverTime(damagePerTick,frequency,numberOfTicks));
+    }
+    private IEnumerator DamageOverTime(float damagePerTick, float frequency, int numberOfTicks)
+    {
+        for (int i=0;i<numberOfTicks;i++){
+            TakeDamage(damagePerTick);
+            yield return new WaitForSeconds(frequency);
+        }
+    }
+    private void ShowFloatingText(float damage){
+        GameObject go = Instantiate(textPrefab,transform.position,Quaternion.identity,transform);
+        go.GetComponent<TextMeshPro>().text=damage.ToString();
+    }
     void Update() {
         if (currentHP <= 0){
             Die();

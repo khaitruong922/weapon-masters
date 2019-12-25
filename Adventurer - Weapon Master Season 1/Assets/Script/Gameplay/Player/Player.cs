@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Player: MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Player: MonoBehaviour
     public float maxHP=200f;
     public float currentHP;
     public Image healthBar;
+    public GameObject damageTextPrefab;
+    public GameObject healingTextPrefab;
     public Vector2 lookDir;
     void Start()
     { 
@@ -33,8 +36,10 @@ public class Player: MonoBehaviour
         rb.rotation = angle;
         
     }
+
     public void TakeDamage(float damage){
         currentHP -= damage;
+        ShowFloatingText(damage,damageTextPrefab);
         if (currentHP <= 0){
             Die();
         }
@@ -42,10 +47,15 @@ public class Player: MonoBehaviour
     }
     public void Heal(float healAmount){
         currentHP += healAmount;
+        ShowFloatingText(healAmount,healingTextPrefab);
         if (currentHP >= maxHP){
             currentHP = maxHP;
         }
         healthBar.fillAmount = PercentHP();
+    }
+    private void ShowFloatingText(float damage,GameObject textPrefab){
+        GameObject go = Instantiate(textPrefab,transform.position,Quaternion.identity,transform);
+        go.GetComponent<TextMeshPro>().text=damage.ToString();
     }
     void Die(){
         Destroy(gameObject);

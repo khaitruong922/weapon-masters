@@ -197,6 +197,8 @@ MonoBehaviour:
   healthBar: {fileID: 1005068957}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &56019479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -610,7 +612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b6b44a9ba92de44ab64f987b080545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogOfWar: {fileID: 132117038}
 --- !u!61 &132117037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1146,6 +1147,8 @@ MonoBehaviour:
   healthBar: {fileID: 1698476484}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &247906546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1347,6 +1350,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 1797833296}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &270579878
 MonoBehaviour:
@@ -1828,6 +1833,8 @@ MonoBehaviour:
   healthBar: {fileID: 572935969}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &334194723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2029,6 +2036,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 1798112702}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &376764103
 MonoBehaviour:
@@ -25739,7 +25748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b6b44a9ba92de44ab64f987b080545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogOfWar: {fileID: 703959975}
 --- !u!61 &703959974
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25886,6 +25894,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 1656854786}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &710995699
 MonoBehaviour:
@@ -26089,6 +26099,8 @@ MonoBehaviour:
   healthBar: {fileID: 2143277103}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &712106062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26263,7 +26275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b6b44a9ba92de44ab64f987b080545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogOfWar: {fileID: 834038075}
 --- !u!61 &834038074
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26410,6 +26421,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 32913202}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &835854904
 MonoBehaviour:
@@ -148335,7 +148348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b6b44a9ba92de44ab64f987b080545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogOfWar: {fileID: 1363650376}
 --- !u!61 &1363650375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148620,7 +148632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b6b44a9ba92de44ab64f987b080545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogOfWar: {fileID: 1433237402}
 --- !u!61 &1433237401
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -148916,7 +148927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b6b44a9ba92de44ab64f987b080545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogOfWar: {fileID: 1502615874}
 --- !u!1 &1545662463
 GameObject:
   m_ObjectHideFlags: 0
@@ -148995,7 +149005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b6b44a9ba92de44ab64f987b080545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogOfWar: {fileID: 1569929907}
 --- !u!61 &1569929906
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -149142,6 +149151,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 123195405}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &1606667974
 MonoBehaviour:
@@ -149344,6 +149355,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 1009419531}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &1643424701
 MonoBehaviour:
@@ -150403,6 +150416,8 @@ MonoBehaviour:
   healthBar: {fileID: 1149148941}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &1719216030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150604,6 +150619,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 1873902771}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &1720670416
 MonoBehaviour:
@@ -151441,6 +151458,8 @@ MonoBehaviour:
   healthBar: {fileID: 1739685451}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &1949643406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151736,6 +151755,8 @@ MonoBehaviour:
   healthBar: {fileID: 961610739}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &1978681731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151937,6 +151958,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 1482144857}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &1981915668
 MonoBehaviour:
@@ -153018,6 +153041,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 95128862}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &4576585151881676005
 MonoBehaviour:

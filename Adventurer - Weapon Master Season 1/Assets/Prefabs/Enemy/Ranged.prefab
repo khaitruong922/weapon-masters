@@ -138,7 +138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953720a9f0b1f1a489ca56477f2ac455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   speed: 1.5
   stopDistance: 5
   retreatDistance: 4
@@ -162,6 +161,8 @@ MonoBehaviour:
   healthBar: {fileID: 6184158116591078244}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
     type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
+    type: 3}
 --- !u!114 &114104420180201624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,7 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f4c32ad0e344b4d84206b0d61947d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackSpeed: 0.75
   projectile: {fileID: 6574179932928796197, guid: 5ae6ec33763c07044a9dfa72dbd9ba70,
     type: 3}

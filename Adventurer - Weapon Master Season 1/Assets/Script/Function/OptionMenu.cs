@@ -15,4 +15,9 @@ public class OptionMenu : MonoBehaviour
         PlayerPrefs.SetFloat("Volume",Mathf.Log10(volume)*20);
         PlayerPrefs.Save();
     }
+    public void ResetPlayer(){
+        PersistentData.Instance.level = 1;
+        PersistentData.Instance.Save();
+        PersistentData.Instance.Load();
+    }
 }

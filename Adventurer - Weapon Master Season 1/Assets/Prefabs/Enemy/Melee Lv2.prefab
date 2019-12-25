@@ -119,7 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953720a9f0b1f1a489ca56477f2ac455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   speed: 3
   stopDistance: 0
   retreatDistance: 0
@@ -142,6 +141,8 @@ MonoBehaviour:
     type: 3}
   healthBar: {fileID: 8419844507199308648}
   healthPack: {fileID: 5038730564095381259, guid: 614dd800f60e7e143b315c93caf22373,
+    type: 3}
+  textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
 --- !u!114 &2180287223015492576
 MonoBehaviour:
