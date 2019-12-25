@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class FloatingText : MonoBehaviour
 {
@@ -14,4 +15,5 @@ public class FloatingText : MonoBehaviour
         Destroy(gameObject,destroyTime);
         transform.localPosition+= new Vector3(Random.Range(-2f,2f),Random.Range(-2f,2f),0);
     }
+    
 }

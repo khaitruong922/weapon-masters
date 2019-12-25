@@ -17,12 +17,10 @@ public class Cart: MonoBehaviour
     {
         if(other.gameObject.tag == "Player"){
         transform.position = Vector2.MoveTowards(transform.position, winPoint.position, cartSpeed * Time.deltaTime);
-    }
-    }
-    void Update(){
         currentProgress=(maxDistance - Vector2.Distance(transform.position,winPoint.position))/maxDistance;
         if(Vector2.Distance(transform.position,winPoint.position) == 0)
         GameHandler.Instance.Win();
+    }
     }
 }
 

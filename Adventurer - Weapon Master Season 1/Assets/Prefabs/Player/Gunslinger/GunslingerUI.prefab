@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 554079050}
-  preText: 'Lvl: '
+  preText: 'Lv. '
   dataType: Level
 --- !u!1 &1250020076
 GameObject:

@@ -191,7 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1005068957}
@@ -1139,9 +1139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 300
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1698476484}
@@ -1163,7 +1163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stopDistance: 10
-  retreatDistance: 6
+  retreatDistance: 4
 --- !u!61 &247906547
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1797833296}
@@ -1827,7 +1827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 572935969}
@@ -2031,7 +2031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1798112702}
@@ -25889,7 +25889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1656854786}
@@ -26091,9 +26091,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 300
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 2143277103}
@@ -26115,7 +26115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stopDistance: 10
-  retreatDistance: 6
+  retreatDistance: 4
 --- !u!61 &712106063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26416,7 +26416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 32913202}
@@ -149144,9 +149144,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 300
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 123195405}
@@ -149168,7 +149168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stopDistance: 10
-  retreatDistance: 6
+  retreatDistance: 4
 --- !u!61 &1606667975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -149348,9 +149348,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 300
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1009419531}
@@ -149372,7 +149372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stopDistance: 10
-  retreatDistance: 6
+  retreatDistance: 4
 --- !u!61 &1643424702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150408,9 +150408,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 300
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1149148941}
@@ -150432,7 +150432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stopDistance: 10
-  retreatDistance: 6
+  retreatDistance: 4
 --- !u!61 &1719216031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150614,7 +150614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1873902771}
@@ -151450,9 +151450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 300
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1739685451}
@@ -151474,7 +151474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stopDistance: 10
-  retreatDistance: 6
+  retreatDistance: 4
 --- !u!61 &1949643407
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151747,9 +151747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 300
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 961610739}
@@ -151771,7 +151771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stopDistance: 10
-  retreatDistance: 6
+  retreatDistance: 4
 --- !u!61 &1978681732
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -151951,9 +151951,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 250
+  maxHP: 300
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 1482144857}
@@ -151975,7 +151975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   stopDistance: 10
-  retreatDistance: 6
+  retreatDistance: 4
 --- !u!61 &1981915669
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -152610,7 +152610,7 @@ MonoBehaviour:
   voidlings: {fileID: 2302487664290738811, guid: 3bf519b16c5f24f45b646ab95423432e,
     type: 3}
   spawnDuration: 25
-  spawnRate: 6
+  spawnRate: 4
 --- !u!1 &558399765959611528
 GameObject:
   m_ObjectHideFlags: 0
@@ -152726,7 +152726,7 @@ MonoBehaviour:
   voidlings: {fileID: 2302487664290738811, guid: 3bf519b16c5f24f45b646ab95423432e,
     type: 3}
   spawnDuration: 31
-  spawnRate: 5
+  spawnRate: 4
 --- !u!1 &1363214584846825532
 GameObject:
   m_ObjectHideFlags: 0
@@ -152890,7 +152890,7 @@ MonoBehaviour:
   voidlings: {fileID: 3271961353296197649, guid: bf011eeceb9c9384594a1e3ee72945fa,
     type: 3}
   spawnDuration: 25
-  spawnRate: 6
+  spawnRate: 4
 --- !u!1 &2830161684562916985
 GameObject:
   m_ObjectHideFlags: 0
@@ -153006,7 +153006,7 @@ MonoBehaviour:
   voidlings: {fileID: 3271961353296197649, guid: bf011eeceb9c9384594a1e3ee72945fa,
     type: 3}
   spawnDuration: 31
-  spawnRate: 6
+  spawnRate: 5
 --- !u!114 &4473810212092842165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153036,7 +153036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 500
   currentHP: 0
-  dropChance: 0.6
+  dropChance: 0.4
   deathEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
   healthBar: {fileID: 95128862}

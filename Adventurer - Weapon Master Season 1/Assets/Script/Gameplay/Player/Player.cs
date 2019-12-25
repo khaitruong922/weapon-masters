@@ -56,9 +56,10 @@ public class Player: MonoBehaviour
     private void ShowFloatingText(float damage,GameObject textPrefab){
         GameObject go = Instantiate(textPrefab,transform.position,Quaternion.identity,transform);
         go.GetComponent<TextMeshPro>().text=damage.ToString();
+        go.GetComponent<TextMeshPro>().fontSize=Mathf.Clamp(damage/maxHP,0.5f,1f)*12;
     }
     void Die(){
-        Destroy(gameObject);
+        gameObject.SetActive(false);
         GameHandler.Instance.Defeat();
         Time.timeScale = 0;
     }

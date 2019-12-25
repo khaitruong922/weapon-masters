@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour
     private void ShowFloatingText(float damage){
         GameObject go = Instantiate(textPrefab,transform.position,Quaternion.identity,transform);
         go.GetComponent<TextMeshPro>().text=damage.ToString();
+        go.GetComponent<TextMeshPro>().fontSize=Mathf.Clamp(damage/maxHP,0.5f,1f)*12;
     }
     void Update() {
         if (currentHP <= 0){
