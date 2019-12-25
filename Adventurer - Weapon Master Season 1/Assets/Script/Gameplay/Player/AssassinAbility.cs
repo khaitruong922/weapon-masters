@@ -62,8 +62,8 @@ public class AssassinAbility : MonoBehaviour
                     {
                         hitZone[i].GetComponent<Enemy>().TakeDamage(damage);
                         hitZone[i].GetComponent<Enemy>().TakeDamageOverTime(damagePerTick,frequency,numberOfTicks);
-                        timeBtwAttack = 1/attackSpeed;
                     }
+                    timeBtwAttack = 1/attackSpeed;
                 }
             }
             else
