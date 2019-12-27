@@ -171,10 +171,10 @@ MonoBehaviour:
   damagePerTick: 15
   frequency: 0.5
   numberOfTicks: 10
-  qCooldown: 4
+  qCooldown: 2
   projectileSpreadValue: 0.1
   projectileForce: 20
-  eCooldown: 4
+  eCooldown: 2
   eCooldownLeft: 0
   dashTime: 0.2
   dashForce: 40
