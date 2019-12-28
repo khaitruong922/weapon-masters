@@ -11,7 +11,8 @@ public class MapDisplay : MonoBehaviour
     public TextMeshProUGUI difficultyText;
     public TextMeshProUGUI descriptionText;
     int mapNumber;
-    void OnEnable() {
+    void OnEnable()
+    {
         mapNumber = PlayerPrefs.GetInt("MapNumber");
         mapNameText.text = map[mapNumber].mapName;
         modeText.text = map[mapNumber].mode;

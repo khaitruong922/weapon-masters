@@ -10,42 +10,49 @@ public class GameHandler : MonoBehaviour
     public GameObject[] UI;
     public GameObject defeatScreen;
     public GameObject winScreen;
-    public static GameHandler Instance {get;set;}
+    public static GameHandler Instance { get; set; }
     bool oneTimeCall = false;
     [Header("Game Theme")]
     public AudioClip clip;
     public float volume;
 
-    void Awake() {
-        if(AudioManager.Instance != null && AudioManager.Instance.sounds[0].clip != clip && clip != null){
-            AudioManager.Instance.ChangeAudio(clip,true,0.1f);
+    void Awake()
+    {
+        if (AudioManager.Instance != null && AudioManager.Instance.sounds[0].clip != clip && clip != null)
+        {
+            AudioManager.Instance.ChangeAudio(clip, true, 0.1f);
         }
         Instance = this;
         defeatScreen.SetActive(false);
         winScreen.SetActive(false);
-        Time.timeScale =1;
+        Time.timeScale = 1;
         fogOfWar.SetActive(true);
-        Instantiate(player[PlayerPrefs.GetInt("CharNumber",0)],transform.position,transform.rotation);
-        Instantiate(UI[PlayerPrefs.GetInt("CharNumber",0)],transform.position,Quaternion.identity);
-        Debug.Log("Character "+PlayerPrefs.GetInt("CharNumber",0)+" selected");
+        Instantiate(player[PlayerPrefs.GetInt("CharNumber", 0)], transform.position, transform.rotation);
+        Instantiate(UI[PlayerPrefs.GetInt("CharNumber", 0)], transform.position, Quaternion.identity);
+        Debug.Log("Character " + PlayerPrefs.GetInt("CharNumber", 0) + " selected");
     }
-    public void Win(){
+    public void Win()
+    {
         winScreen.SetActive(true);
         StartCoroutine(DelayStop(1));
-        if (PersistentData.Instance != null && oneTimeCall == false){
-        oneTimeCall = !oneTimeCall; // call function once
-        PersistentData.Instance.level +=1 ;
+        if (PersistentData.Instance != null && oneTimeCall == false)
+        {
+            oneTimeCall = !oneTimeCall; // call function once
+            PersistentData.Instance.level += 1;
         }
     }
-    public void Defeat(){
+    public void Defeat()
+    {
         defeatScreen.SetActive(true);
         StartCoroutine(DelayStop(1));
-        if (PersistentData.Instance != null && oneTimeCall == false){
-        oneTimeCall = !oneTimeCall; // call function once
+        if (PersistentData.Instance != null && oneTimeCall == false)
+        {
+            oneTimeCall = !oneTimeCall; // call function once
         }
     }
-    IEnumerator DelayStop(float seconds){
+    IEnumerator DelayStop(float seconds)
+    {
         yield return new WaitForSeconds(seconds);
-        Time.timeScale=0f;
+        Time.timeScale = 0f;
     }
-    }
+}

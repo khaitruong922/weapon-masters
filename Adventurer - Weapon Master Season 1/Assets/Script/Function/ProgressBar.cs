@@ -20,6 +20,6 @@ public class ProgressBar : MonoBehaviour
     void Update()
     {
         bar.fillAmount = cart.currentProgress;
-        progress.text = ((int)(bar.fillAmount*100)).ToString() + " %";
+        progress.text = ((int)(bar.fillAmount * 100)).ToString() + " %";
     }
 }

@@ -6,12 +6,15 @@ public class Initializer : MonoBehaviour
 {
     public GameObject audioManager;
 
-    private void Awake() {
-        if(PersistentData.Instance == null){
+    private void Awake()
+    {
+        if (PersistentData.Instance == null)
+        {
             PersistentData Instance = this.gameObject.AddComponent<PersistentData>();
         }
-        if(AudioManager.Instance ==null){
-            Instantiate(audioManager,transform.position,Quaternion.identity);
+        if (AudioManager.Instance == null)
+        {
+            Instantiate(audioManager, transform.position, Quaternion.identity);
         }
     }
 }

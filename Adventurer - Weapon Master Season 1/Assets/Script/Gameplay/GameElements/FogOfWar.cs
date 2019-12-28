@@ -5,19 +5,24 @@ using UnityEngine;
 public class FogOfWar : MonoBehaviour
 {
     private SpriteRenderer fogOfWar;
-    void Start(){
+    void Start()
+    {
         fogOfWar = GetComponent<SpriteRenderer>();
     }
-    void OnTriggerEnter2D(Collider2D player){
-        if (player.gameObject.tag == "Player"){
+    void OnTriggerEnter2D(Collider2D player)
+    {
+        if (player.gameObject.tag == "Player")
+        {
             fogOfWar.enabled = false;
         }
     }
-     void OnTriggerExit2D(Collider2D player) {
-        if (player.gameObject.tag == "Player"){
-            fogOfWar.enabled = true; 
+    void OnTriggerExit2D(Collider2D player)
+    {
+        if (player.gameObject.tag == "Player")
+        {
+            fogOfWar.enabled = true;
+        }
+    }
 }
-     }
-}
-    
-     
+
+

@@ -10,7 +10,7 @@ public class AssassinAbility : MonoBehaviour
     public GameObject shootEffect;
     private Player player;
     private Animator anim;
-    
+
     [Header("Attack")]
     private bool attack = true;
     public float damage = 100f;
@@ -21,7 +21,7 @@ public class AssassinAbility : MonoBehaviour
     public LayerMask enemyOnly;
 
     [Header("Poison Blade")]
-    public float damagePerTick= 200f;
+    public float damagePerTick = 200f;
     public float frequency = 0.25f;
     public int numberOfTicks = 8;
 
@@ -51,9 +51,9 @@ public class AssassinAbility : MonoBehaviour
     {
         if (attack == true)
         {
-            if(timeBtwAttack <= 0)
+            if (timeBtwAttack <= 0)
             {
-                if(Input.GetMouseButton(0))
+                if (Input.GetMouseButton(0))
                 {
                     anim.SetTrigger("Attack");
 
@@ -61,38 +61,39 @@ public class AssassinAbility : MonoBehaviour
                     for (int i = 0; i < hitZone.Length; i++)
                     {
                         hitZone[i].GetComponent<Enemy>().TakeDamage(damage);
-                        hitZone[i].GetComponent<Enemy>().TakeDamageOverTime(damagePerTick,frequency,numberOfTicks);
+                        hitZone[i].GetComponent<Enemy>().TakeDamageOverTime(damagePerTick, frequency, numberOfTicks);
                     }
-                    timeBtwAttack = 1/attackSpeed;
+                    timeBtwAttack = 1 / attackSpeed;
                 }
             }
             else
             {
                 timeBtwAttack -= Time.deltaTime;
             }
-        }     
-        
-        if(qCooldownLeft<=0)
+        }
+
+        if (qCooldownLeft <= 0)
         {
-            if(Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 qCooldownLeft = qCooldown;
-                for(float i =-2;i<3;i++){
-                   Shoot(projectileSpreadValue*i,1f);
-                }   
+                for (float i = -2; i < 3; i++)
+                {
+                    Shoot(projectileSpreadValue * i, 1f);
+                }
             }
         }
         else
         {
             qCooldownLeft -= Time.deltaTime;
         }
-        if(eCooldownLeft<=0)
+        if (eCooldownLeft <= 0)
         {
-            if(Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 dashTimeLeft = dashTime;
                 eCooldownLeft = eCooldown;
-                if(dashTimeLeft>=0)
+                if (dashTimeLeft >= 0)
                 {
                     dashTimeLeft -= Time.deltaTime;
                 }
@@ -103,25 +104,26 @@ public class AssassinAbility : MonoBehaviour
             eCooldownLeft -= Time.deltaTime;
         }
 
-       
+
     }
     void OnDrawGizmosSelected() //hitZone radius checker (Scene only)
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPosition.position, attackRange);
     }
-    
-    private void FixedUpdate() 
+
+    private void FixedUpdate()
     {
-        if(dashTimeLeft>=0)
+        if (dashTimeLeft >= 0)
         {
-            rb.AddForce(player.lookDir.normalized * dashForce,ForceMode2D.Impulse);
+            rb.AddForce(player.lookDir.normalized * dashForce, ForceMode2D.Impulse);
             dashTimeLeft -= Time.fixedDeltaTime;
         }
     }
-    void Shoot(float x,float y){
-        GameObject bullet = Instantiate(projectile, attackPosition.position,attackPosition.rotation);
+    void Shoot(float x, float y)
+    {
+        GameObject bullet = Instantiate(projectile, attackPosition.position, attackPosition.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(attackPosition.TransformVector(x,y,0) * projectileForce, ForceMode2D.Impulse);
+        rb.AddForce(attackPosition.TransformVector(x, y, 0) * projectileForce, ForceMode2D.Impulse);
     }
 }

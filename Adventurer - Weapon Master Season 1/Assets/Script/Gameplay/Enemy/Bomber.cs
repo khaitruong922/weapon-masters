@@ -9,15 +9,18 @@ public class Bomber : MonoBehaviour
     private GameObject impactEffect;
     private Enemy enemy;
     private Player target;
-    void Start(){
+    void Start()
+    {
         enemy = GetComponent<Enemy>();
         target = FindObjectOfType<Player>();
     }
 
-    void OnCollisionEnter2D(Collision2D other) {
-    if(other.collider.CompareTag("Player")){ 
-        target.TakeDamage(damage);
-        enemy.currentHP = -1;
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Player"))
+        {
+            target.TakeDamage(damage);
+            enemy.currentHP = -1;
+        }
     }
-}
 }

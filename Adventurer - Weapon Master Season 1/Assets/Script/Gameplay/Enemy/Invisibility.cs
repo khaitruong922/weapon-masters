@@ -5,9 +5,10 @@ using UnityEngine;
 public class Invisibility : MonoBehaviour
 {
     private SpriteRenderer sprite;
-    
-    void Start(){
-        sprite=GetComponent<SpriteRenderer>();
+
+    void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>();
         sprite.enabled = false;
     }
 }

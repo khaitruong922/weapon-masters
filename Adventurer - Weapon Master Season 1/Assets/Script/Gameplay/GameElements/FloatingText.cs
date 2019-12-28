@@ -12,8 +12,8 @@ public class FloatingText : MonoBehaviour
     {
         meshRenderer = GetComponent<MeshRenderer>();
         meshRenderer.sortingOrder = sortingLayer;
-        Destroy(gameObject,destroyTime);
-        transform.localPosition+= new Vector3(Random.Range(-2f,2f),Random.Range(-2f,2f),0);
+        Destroy(gameObject, destroyTime);
+        transform.localPosition += new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0);
     }
-    
+
 }

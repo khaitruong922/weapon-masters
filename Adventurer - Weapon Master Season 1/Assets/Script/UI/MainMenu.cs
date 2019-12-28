@@ -16,7 +16,8 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         PlayClickSound();
     }
-    public void PlayClickSound(){
+    public void PlayClickSound()
+    {
         AudioManager.Instance.Play("Click");
     }
 }
