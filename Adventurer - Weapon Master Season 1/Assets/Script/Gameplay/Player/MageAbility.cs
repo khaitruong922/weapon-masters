@@ -26,6 +26,9 @@ public class MageAbility : MonoBehaviour
     [HideInInspector] public float eCooldownLeft;
     public float eDuration = 4f;
     public GameObject lightOrb;
+    [Header("Explosion")]
+    public float rCooldown = 20f;
+    [HideInInspector] public float rCooldownLeft;
 
     void Start()
     {
@@ -62,6 +65,15 @@ public class MageAbility : MonoBehaviour
             }
         }
         else eCooldownLeft -= Time.deltaTime;
+        if (rCooldownLeft <= 0)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                //do something
+                rCooldownLeft = rCooldown;
+            }
+        }
+        else rCooldownLeft -= Time.deltaTime;
     }
     void BlackHole()
     {

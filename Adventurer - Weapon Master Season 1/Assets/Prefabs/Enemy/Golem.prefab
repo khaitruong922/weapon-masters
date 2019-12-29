@@ -519,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackRange: 5
-  damage: 100
+  damage: 80
   attackSpeed: 0.3
   radius: 5
   attackDelay: 0.4

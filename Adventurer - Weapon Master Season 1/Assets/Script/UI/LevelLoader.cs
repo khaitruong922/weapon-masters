@@ -33,7 +33,7 @@ public class LevelLoader : MonoBehaviour
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
-            progressText.text = progress * 100f + "%";
+            progressText.text = ((int) progress * 100f) + "%";
             yield return null;
         }
     }

@@ -25,17 +25,26 @@ public class AssassinAbility : MonoBehaviour
     public float frequency = 0.25f;
     public int numberOfTicks = 8;
 
-    [Header("Narrow Escape")]
+    [Header("Arc Stars")]
     public float qCooldown = 8f;
     public float projectileSpreadValue = 0.2f;
     public float projectileForce = 20f;
-    private float qCooldownLeft;
+    [HideInInspector]public float qCooldownLeft;
     private float dashTimeLeft;
-    [Header("Dash")]
+    [Header("Lightning Dash")]
     public float eCooldown = 2f;
     [HideInInspector] public float eCooldownLeft;
     public float dashTime = 0.2f;
     public float dashForce = 40f;
+    [Header("Lethal Attack")]
+    public float rCooldown = 18f;
+    public float reactivateTime = 5f;
+    [HideInInspector] public float reactivateTimeLeft;
+    public GameObject kunai;
+    public GameObject dashHitbox;
+    public float kunaiForce = 40f;
+    public float ultimateDashSpeed = 40f;
+    [HideInInspector] public float rCooldownLeft;
 
 
     // Start is called before the first frame update
@@ -103,8 +112,27 @@ public class AssassinAbility : MonoBehaviour
         {
             eCooldownLeft -= Time.deltaTime;
         }
-
-
+        if (rCooldownLeft <= 0)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Kunai(0, 1);
+                rCooldownLeft = rCooldown;
+                reactivateTimeLeft = reactivateTime;
+            }
+        }
+        else
+        {
+            rCooldownLeft -= Time.deltaTime;
+        }
+        if (reactivateTimeLeft >= 0)
+        {
+            reactivateTimeLeft -= Time.deltaTime;
+            if (Input.GetKeyDown(KeyCode.R) && reactivateTimeLeft < reactivateTime - 0.1f)
+            {
+                StartCoroutine(LethalDash());
+            }
+        }
     }
     void OnDrawGizmosSelected() //hitZone radius checker (Scene only)
     {
@@ -122,8 +150,30 @@ public class AssassinAbility : MonoBehaviour
     }
     void Shoot(float x, float y)
     {
-        GameObject bullet = Instantiate(projectile, attackPosition.position, attackPosition.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        GameObject go = Instantiate(projectile, attackPosition.position, attackPosition.rotation);
+        Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
         rb.AddForce(attackPosition.TransformVector(x, y, 0) * projectileForce, ForceMode2D.Impulse);
+    }
+    void Kunai(float x, float y)
+    {
+        GameObject go = Instantiate(kunai, attackPosition.position, attackPosition.rotation);
+        Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
+        rb.AddForce(attackPosition.TransformVector(x, y, 0) * kunaiForce, ForceMode2D.Impulse);
+    }
+    private IEnumerator LethalDash()
+    {
+
+        Transform kunai = FindObjectOfType<Kunai>().GetComponent<Transform>();
+        if (kunai != null)
+        {
+            dashHitbox.SetActive(true);
+            while (transform.position != kunai.position)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, kunai.position, ultimateDashSpeed * Time.deltaTime);
+                yield return null;
+            }
+            reactivateTimeLeft = -1f;
+            dashHitbox.SetActive(false);
+        }
     }
 }

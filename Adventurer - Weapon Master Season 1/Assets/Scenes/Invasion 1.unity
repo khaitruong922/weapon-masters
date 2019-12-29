@@ -148567,8 +148567,8 @@ MonoBehaviour:
   - {fileID: 6672731197018185458, guid: 3f5f9b825d68f524384fd3adc65e7b8e, type: 3}
   UI:
   - {fileID: 1228276874550863533, guid: 7218c1b33c465e345b3437bfdaa2ebe2, type: 3}
-  - {fileID: 8780515308477971466, guid: fb2bfc88fbb724a42b2d450f5bbcb589, type: 3}
-  - {fileID: 7002756222995424171, guid: 33056698605f30b4fa1e6bf948f99c74, type: 3}
+  - {fileID: 4268775450065828860, guid: f39c3046d7bdcfb4a9e4749b5744f839, type: 3}
+  - {fileID: 7525526346971318904, guid: 33056698605f30b4fa1e6bf948f99c74, type: 3}
   defeatScreen: {fileID: 1304355912}
   winScreen: {fileID: 1655110238}
   clip: {fileID: 0}
