@@ -156,7 +156,7 @@ public class AssassinAbility : MonoBehaviour
     }
     void Kunai(float x, float y)
     {
-        GameObject go = Instantiate(kunai, attackPosition.position, attackPosition.rotation);
+        GameObject go = Instantiate(kunai, transform.position, transform.rotation);
         Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
         rb.AddForce(attackPosition.TransformVector(x, y, 0) * kunaiForce, ForceMode2D.Impulse);
     }
@@ -167,7 +167,7 @@ public class AssassinAbility : MonoBehaviour
         if (kunai != null)
         {
             dashHitbox.SetActive(true);
-            while (transform.position != kunai.position)
+            while (Vector2.Distance(transform.position,kunai.position)>1.5)
             {
                 transform.position = Vector2.MoveTowards(transform.position, kunai.position, ultimateDashSpeed * Time.deltaTime);
                 yield return null;
