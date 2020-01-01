@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GunslingerBossRicochet : MonoBehaviour
+public class BossRicochet : MonoBehaviour
 {
     public float damage = 50f;
     public float destroyTime=5f;

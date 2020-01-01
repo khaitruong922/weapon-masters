@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4488314231204636959}
   - component: {fileID: 4488314231204636957}
   - component: {fileID: 2453485118313213272}
-  - component: {fileID: 2876452443632970537}
+  - component: {fileID: 114922569578256916}
   m_Layer: 13
   m_Name: MageBossLightOrb
   m_TagString: EnemyProjectile
@@ -98,7 +98,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5a8b6205c4d8b6148aee2149f8010568, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -119,7 +119,7 @@ CircleCollider2D:
   m_Offset: {x: 0.14308548, y: 0.042541027}
   serializedVersion: 2
   m_Radius: 0.320755
---- !u!114 &2876452443632970537
+--- !u!114 &114922569578256916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,9 +128,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4488314231204636958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 195e77db3eed2b34bb928c73852f7a74, type: 3}
+  m_Script: {fileID: 11500000, guid: a2b7f8312da60ea4e8d3172688ed70af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
-  destroyTime: 0.75
-  effect: {fileID: 473450889230873666, guid: df856331bdf64f2419d20032994657e5, type: 3}
+  damage: 10
+  destroyTime: 2
+  effect: {fileID: 5489396285865394607, guid: da30c144f2b24ce40935073b96147d91, type: 3}
