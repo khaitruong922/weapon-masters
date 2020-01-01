@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  mousePos: {x: 0, y: 0}
   speed: 5
   maxHP: 900
   currentHP: 0
@@ -300,7 +301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2776f72233dd9241aa6b480a405de84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 7131651934969864699}
   firePoint: {fileID: 7131651934137954768}
   projectile: {fileID: 6195319448657070489, guid: 595a9da02615b0e4cb7443218afd143f,
     type: 3}
@@ -320,6 +320,11 @@ MonoBehaviour:
   eDuration: 4
   lightOrb: {fileID: 5976866291929009393, guid: 6f807d2987c386e45b040fb083c03454,
     type: 3}
+  rCooldown: 3
+  explosion: {fileID: 2626184236903919819, guid: 0428fc92a47717144a310c5a49f18fde,
+    type: 3}
+  destroyTime: 1
+  rCooldownLeft: 0
 --- !u!58 &2931921704100079037
 CircleCollider2D:
   m_ObjectHideFlags: 0

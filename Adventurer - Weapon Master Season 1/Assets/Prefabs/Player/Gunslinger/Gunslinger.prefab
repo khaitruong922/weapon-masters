@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 966948187}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  mousePos: {x: 0, y: 0}
   speed: 4.5
   maxHP: 1000
   currentHP: 0
@@ -248,7 +249,7 @@ MonoBehaviour:
   eCooldownLeft: 0
   eDuration: 5
   multiplier: 2
-  dashForce: 20
+  dashForce: 30
   dashTime: 0.2
   rCooldown: 20
   rCooldownLeft: 0

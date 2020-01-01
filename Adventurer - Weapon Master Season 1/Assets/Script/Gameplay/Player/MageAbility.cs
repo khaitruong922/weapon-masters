@@ -5,7 +5,7 @@ using UnityEngine;
 public class MageAbility : MonoBehaviour
 {
     [Header("Object references")]
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
     public Transform firePoint;
     public GameObject projectile;
     public GameObject shootEffect;
@@ -28,11 +28,14 @@ public class MageAbility : MonoBehaviour
     public GameObject lightOrb;
     [Header("Explosion")]
     public float rCooldown = 20f;
+    public GameObject explosion;
+    public float destroyTime = 1f;
     [HideInInspector] public float rCooldownLeft;
 
     void Start()
     {
-        player = gameObject.GetComponent<Player>();
+        rb = GetComponent<Rigidbody2D>();
+        player = GetComponent<Player>();
     }
     void Update()
     {
@@ -69,11 +72,15 @@ public class MageAbility : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
-                //do something
+                Explosion();
                 rCooldownLeft = rCooldown;
             }
         }
         else rCooldownLeft -= Time.deltaTime;
+    }
+    void Explosion(){
+        GameObject go = Instantiate(explosion,player.mousePos, Quaternion.identity);
+        Destroy(go, destroyTime);
     }
     void BlackHole()
     {

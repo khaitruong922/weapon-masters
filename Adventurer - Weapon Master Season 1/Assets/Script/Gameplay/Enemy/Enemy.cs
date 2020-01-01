@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
         currentHP -= damage; //health is decreased by damage dealt.
         EnemyHealthBar enemyHealthBar = healthBar.GetComponent<EnemyHealthBar>();
         enemyHealthBar.SetSize(PercentHP());
-        ShowFloatingText(damage);
+        ShowFloatingText((int)damage);
     }
     public void TakeDamageOverTime(float damagePerTick, float frequency, int numberOfTicks)
     {

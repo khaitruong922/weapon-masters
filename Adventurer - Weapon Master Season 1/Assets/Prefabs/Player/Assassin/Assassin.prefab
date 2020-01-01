@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
+  mousePos: {x: 0, y: 0}
   speed: 7
   maxHP: 1250
   currentHP: 0
@@ -284,6 +285,7 @@ MonoBehaviour:
   qCooldown: 4
   projectileSpreadValue: 0.1
   projectileForce: 20
+  qCooldownLeft: 0
   eCooldown: 4
   eCooldownLeft: 0
   dashTime: 0.2

@@ -57,6 +57,7 @@ public class AssassinCooldown : MonoBehaviour
                 }
             case "R2":
                 {
+                    cooldownFill.fillAmount = player.reactivateTimeLeft / player.reactivateTime;
                     break;
                 }
 

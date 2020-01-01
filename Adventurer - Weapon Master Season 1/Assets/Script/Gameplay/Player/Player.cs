@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     public Camera cam;
     Vector2 movement;
-    Vector2 mousePos;
+    [HideInInspector] public Vector2 mousePos;
     public float speed = 5f;
     public float maxHP = 200f;
     public float currentHP;
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHP -= damage;
-        ShowFloatingText(damage, damageTextPrefab);
+        ShowFloatingText((int)damage, damageTextPrefab);
         if (currentHP <= 0)
         {
             Die();
@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
     public void Heal(float healAmount)
     {
         currentHP += healAmount;
-        ShowFloatingText(healAmount, healingTextPrefab);
+        ShowFloatingText((int)healAmount, healingTextPrefab);
         if (currentHP >= maxHP)
         {
             currentHP = maxHP;
