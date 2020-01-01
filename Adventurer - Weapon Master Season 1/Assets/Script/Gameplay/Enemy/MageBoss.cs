@@ -84,7 +84,7 @@ public class MageBoss : MonoBehaviour
     }
     void Explosion(){
         GameObject go = Instantiate(explosion,player.position,Quaternion.identity);
-        Destroy(go,1f);
+        Destroy(go,1.1f);
     }
     void LightOrb(float x, float y)
     {

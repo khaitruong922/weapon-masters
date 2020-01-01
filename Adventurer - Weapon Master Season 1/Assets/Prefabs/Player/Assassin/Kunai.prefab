@@ -133,4 +133,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopTime: 0.35
   lifetime: 5
-  damage: 250
+  damage: 300
