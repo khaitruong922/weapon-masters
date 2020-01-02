@@ -57,6 +57,18 @@ public class Player : MonoBehaviour
         }
         healthBar.fillAmount = PercentHP();
     }
+    public void TakeDamageOverTime(float damagePerTick, float frequency, int numberOfTicks)
+    {
+        StartCoroutine(DamageOverTime(damagePerTick, frequency, numberOfTicks));
+    }
+    private IEnumerator DamageOverTime(float damagePerTick, float frequency, int numberOfTicks)
+    {
+        for (int i = 0; i < numberOfTicks; i++)
+        {
+            TakeDamage(damagePerTick);
+            yield return new WaitForSeconds(frequency);
+        }
+    }
     private void ShowFloatingText(float damage, GameObject textPrefab)
     {
         GameObject go = Instantiate(textPrefab, transform.position, Quaternion.identity, transform);
