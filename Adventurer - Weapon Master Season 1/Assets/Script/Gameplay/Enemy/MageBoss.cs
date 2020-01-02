@@ -37,7 +37,7 @@ public class MageBoss : MonoBehaviour
         InvokeRepeating("Attack", 1f, 1 / attackSpeed);
         InvokeRepeating("BlackHole", qCooldown, qCooldown);
         InvokeRepeating("Shield", eCooldown, eCooldown);
-        InvokeRepeating("Explosion", rCooldown*0.7f, rCooldown);
+        InvokeRepeating("Explosion", rCooldown, rCooldown);
     }
     private void Shoot(float x, float y, GameObject projectile)
     {

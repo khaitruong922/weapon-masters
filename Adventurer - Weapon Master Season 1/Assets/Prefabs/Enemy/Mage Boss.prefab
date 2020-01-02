@@ -685,4 +685,4 @@ MonoBehaviour:
   eDuration: 4
   explosion: {fileID: 5393329475677053324, guid: c18aa2b234fc42f4580dc8c6729d52e0,
     type: 3}
-  rCooldown: 22
+  rCooldown: 20
