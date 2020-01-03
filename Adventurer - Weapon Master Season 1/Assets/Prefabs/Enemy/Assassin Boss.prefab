@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 7096239163028547248}
   - component: {fileID: 4530808417686947791}
   - component: {fileID: 4530808417686947788}
+  - component: {fileID: 646342572}
   m_Layer: 10
   m_Name: Assassin Boss
   m_TagString: Enemy
@@ -251,9 +252,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606bfe57e0d17d04982f45f3a510add4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopDistance: 6
-  retreatDistance: 4
-  speed: 4
+  stopDistance: 0
+  retreatDistance: 0
+  speed: 7
   rotationOffset: 90
 --- !u!114 &4530808417686947788
 MonoBehaviour:
@@ -277,6 +278,40 @@ MonoBehaviour:
     type: 3}
   textPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,
     type: 3}
+--- !u!114 &646342572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4530808417686947790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5807542d407304c83d950ba49c0abc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerOnly:
+    serializedVersion: 2
+    m_Bits: 512
+  attackPosition: {fileID: 4530808418910716913}
+  damage: 60
+  attackRadius: 1.2
+  attackSpeed: 2.5
+  damagePerTick: 10
+  numberOfTicks: 4
+  frequency: 0.5
+  shuriken: {fileID: 997034034612433592, guid: ae08a3f6378d13c4d8cbfe271123f55d, type: 3}
+  qCooldown: 5
+  projectileSpreadVaule: 0.1
+  projectileForce: 30
+  eCooldown: 5
+  dashSpeed: 30
+  dashTime: 0.2
+  kunai: {fileID: 5620352477716125929, guid: 72b946fdadee084479190378cdd6d95f, type: 3}
+  dashHitbox: {fileID: 4270551427098158867}
+  ultDashSpeed: 50
+  rCooldown: 22
+  clone: {fileID: 4530808417686947790}
 --- !u!1 &4530808418910716914
 GameObject:
   m_ObjectHideFlags: 0

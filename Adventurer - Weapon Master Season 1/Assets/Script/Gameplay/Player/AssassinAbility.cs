@@ -6,7 +6,6 @@ public class AssassinAbility : MonoBehaviour
 {
     [Header("Object references")]
     private Rigidbody2D rb;
-    public GameObject projectile;
     public GameObject shootEffect;
     private Player player;
     private Animator anim;
@@ -21,6 +20,7 @@ public class AssassinAbility : MonoBehaviour
     public LayerMask enemyOnly;
 
     [Header("Poison Blade")]
+    public GameObject shuriken;    
     public float damagePerTick = 200f;
     public float frequency = 0.25f;
     public int numberOfTicks = 8;
@@ -150,7 +150,7 @@ public class AssassinAbility : MonoBehaviour
     }
     void Shoot(float x, float y)
     {
-        GameObject go = Instantiate(projectile, attackPosition.position, attackPosition.rotation);
+        GameObject go = Instantiate(shuriken, attackPosition.position, attackPosition.rotation);
         Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
         rb.AddForce(attackPosition.TransformVector(x, y, 0) * projectileForce, ForceMode2D.Impulse);
     }

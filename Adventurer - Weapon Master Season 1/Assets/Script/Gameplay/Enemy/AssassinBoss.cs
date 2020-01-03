@@ -26,7 +26,7 @@ public class AssassinBoss : MonoBehaviour
     [Header("Arc Stars")]
     public GameObject shuriken;
     public float qCooldown = 5f;
-    public float projectileSpreadVaule = 0.2f;
+    public float projectileSpreadValue = 0.2f;
     public float projectileForce = 30f;
 
     [Header("Dash")]
@@ -37,6 +37,7 @@ public class AssassinBoss : MonoBehaviour
     [Header("Lethal Attack")]
     public GameObject kunai;
     public GameObject dashHitbox;
+    public float ultDashSpeed = 50f;
     public float rCooldown = 22f;
     private Transform player;
 
@@ -51,7 +52,7 @@ public class AssassinBoss : MonoBehaviour
         InvokeRepeating("Attack", 1f, 1 / attackSpeed);
         InvokeRepeating("SpreadProjectile", qCooldown, qCooldown);
         InvokeRepeating("Dash", eCooldown, eCooldown);
-        //InvokeRepeating("LethalAttack", rCooldown, rCooldown);
+        InvokeRepeating("LethalAttack", rCooldown, rCooldown);
     }
     private void Shoot(float x, float y, GameObject projectile)
     {
@@ -75,8 +76,23 @@ public class AssassinBoss : MonoBehaviour
     {
         for (int i = -5; i < 6; i++)
         {
-            Shoot(i, 1, shuriken);
+            Shoot(i*projectileSpreadValue, 1, shuriken);
         }
+    }
+    private IEnumerator LethalAttack(){
+        Shoot(0,1,kunai);
+        Transform destination = kunai.GetComponent<Transform>();
+        yield return new WaitForSeconds(0.75f);
+        while (Vector2.Distance(transform.position,destination.position)<1.5){
+            dashHitbox.SetActive(true);
+            DashToKunai(destination);
+            yield return null;
+        }
+        dashHitbox.SetActive(false);
+        
+    }
+    private void DashToKunai(Transform destination){
+        transform.position = Vector2.MoveTowards(transform.position,destination.position,ultDashSpeed*Time.deltaTime);
     }
     private void Attack()
     {
@@ -87,12 +103,5 @@ public class AssassinBoss : MonoBehaviour
             hitZone[i].GetComponent<Player>().TakeDamage(damage);
             hitZone[i].GetComponent<Player>().TakeDamageOverTime(damagePerTick, frequency, numberOfTicks);
         }
-    }
-    private IEnumerator ShieldCoroutine()
-    {
-        dashHitbox.SetActive(true);
-        AudioManager.Instance.Play("Laser");
-        yield return new WaitForSeconds(1);
-        dashHitbox.SetActive(false);
     }
 }
