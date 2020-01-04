@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 388973928971819949}
   - component: {fileID: 6715418789493336472}
   - component: {fileID: 8811552572191634538}
-  m_Layer: 11
+  - component: {fileID: 1807989081}
+  - component: {fileID: 1807989082}
+  m_Layer: 16
   m_Name: DashHitbox
-  m_TagString: AllyProjectile
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +98,31 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.448236}
   serializedVersion: 2
   m_Radius: 1.2306018
+--- !u!114 &1807989081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4270551427098158867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d69a48d120b023d468ddb9a2b9f41aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1807989082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4270551427098158867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa8342bf006d1a4abed73c151e19989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100
 --- !u!1 &4530808417686947790
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4530808417686947784
 Transform:
   m_ObjectHideFlags: 0
@@ -254,7 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopDistance: 0
   retreatDistance: 0
-  speed: 7
+  speed: 6
   rotationOffset: 90
 --- !u!114 &4530808417686947788
 MonoBehaviour:
@@ -268,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 5000
+  maxHP: 10000
   currentHP: 0
   dropChance: 1
   deathEffect: {fileID: 8890188089654198971, guid: 075dad0ed7baa2848b4d185c710d71e1,
@@ -294,24 +321,27 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackPosition: {fileID: 4530808418910716913}
-  damage: 60
+  damage: 40
   attackRadius: 1.2
-  attackSpeed: 2.5
-  damagePerTick: 10
+  attackSpeed: 1.5
+  damagePerTick: 5
   numberOfTicks: 4
   frequency: 0.5
   shuriken: {fileID: 997034034612433592, guid: ae08a3f6378d13c4d8cbfe271123f55d, type: 3}
-  qCooldown: 5
-  projectileSpreadVaule: 0.1
+  qCooldown: 6
+  projectileSpreadValue: 0.2
   projectileForce: 30
-  eCooldown: 5
+  eCooldown: 7
   dashSpeed: 30
   dashTime: 0.2
   kunai: {fileID: 5620352477716125929, guid: 72b946fdadee084479190378cdd6d95f, type: 3}
   dashHitbox: {fileID: 4270551427098158867}
   ultDashSpeed: 50
-  rCooldown: 22
+  rCooldown: 13
   clone: {fileID: 4530808417686947790}
+  invisbleDuration: 6
+  invisibleStartTime: 9
+  invisbleCooldown: 12
 --- !u!1 &4530808418910716914
 GameObject:
   m_ObjectHideFlags: 0

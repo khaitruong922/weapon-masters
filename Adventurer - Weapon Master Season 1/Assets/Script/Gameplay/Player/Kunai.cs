@@ -14,7 +14,7 @@ public class Kunai : MonoBehaviour
         circleCollider2D = GetComponent<CircleCollider2D>();
         StartCoroutine(Stop());
         StartCoroutine(SetInactive());
-        Destroy(gameObject,lifetime+10);
+        Destroy(gameObject,lifetime+2);
     }   
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Wall")){

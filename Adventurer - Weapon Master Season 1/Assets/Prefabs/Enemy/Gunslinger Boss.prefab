@@ -98,7 +98,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1737375140737707829
 Transform:
   m_ObjectHideFlags: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7b13751ca0b8143bf4d5eb01ce2908, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerSec: 150
+  damagePerSec: 100
 --- !u!1 &1737375141019429394
 GameObject:
   m_ObjectHideFlags: 0
@@ -4970,7 +4970,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6654454333592174180
 Transform:
   m_ObjectHideFlags: 0
@@ -5146,7 +5146,7 @@ MonoBehaviour:
   firePoint: {fileID: 1737375141019429395}
   bullet: {fileID: 1831662395571887291, guid: c455e9fb1ddfa9048890cb395745e103, type: 3}
   bulletForce: 20
-  attackSpeed: 1.75
+  attackSpeed: 1.6
   attackNeeded: 3
   bulletSpreadValue: 0.1
   qBullet: {fileID: 6707938639550395485, guid: 8ab6f37ab8f85bb4e9456b736e4e518a, type: 3}

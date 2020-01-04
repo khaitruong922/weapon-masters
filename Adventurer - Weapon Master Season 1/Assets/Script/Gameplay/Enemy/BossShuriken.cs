@@ -18,7 +18,7 @@ public class BossShuriken : MonoBehaviour
     }
     void Update()
     {
-        if (Time.time > returnTime)
+        if (Time.time > returnTime && boss!=null)
         {
             transform.position = Vector2.MoveTowards(transform.position, boss.position, returnSpeed * Time.deltaTime);
             if (transform.position == boss.position)

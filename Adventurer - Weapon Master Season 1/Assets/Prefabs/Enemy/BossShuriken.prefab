@@ -133,7 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactEffect: {fileID: 5449030455912477588, guid: f1bc83a5bb4fcff4d916b7c07c1774a7,
     type: 3}
-  damage: 10
+  damage: 8
   returnTime: 1
   returnSpeed: 100
   anglePerSecond: 120

@@ -8,7 +8,7 @@ public class AssassinBoss : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private EnemyRotation enemy;
-    private SpriteRenderer spriteRenderer;
+    
     public LayerMask playerOnly;
 
     [Header("Attack")]
@@ -43,9 +43,19 @@ public class AssassinBoss : MonoBehaviour
 
     [Header("Clone")]
     public GameObject clone;
+    [Header("Invisible")]
+    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer[] healthBarSprites;
+    private Transform healthBar;
+    public float invisbleDuration = 5f;
+    public float invisibleStartTime = 8f;
+    public float invisbleCooldown = 10f;
 
     private void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        healthBarSprites = GetComponentsInChildren<SpriteRenderer>();
+        healthBar = transform.Find("EnemyHealthBar");
         anim = GetComponent<Animator>();
         player = FindObjectOfType<Player>().GetComponent<Transform>();
         enemy = GetComponent<EnemyRotation>();
@@ -53,6 +63,7 @@ public class AssassinBoss : MonoBehaviour
         InvokeRepeating("SpreadProjectile", qCooldown, qCooldown);
         InvokeRepeating("Dash", eCooldown, eCooldown);
         InvokeRepeating("LethalAttack", rCooldown, rCooldown);
+        InvokeRepeating("InvisibleCoroutineCaller",invisibleStartTime,invisbleCooldown);
     }
     private void Shoot(float x, float y, GameObject projectile)
     {
@@ -62,6 +73,26 @@ public class AssassinBoss : MonoBehaviour
     }
     private void Dash(){
         dashTimeLeft=dashTime;
+    }
+    private void InvisibleCoroutineCaller(){
+        StartCoroutine(InvisibleCoroutine());
+    }
+    private IEnumerator InvisibleCoroutine(){
+        Invisible();
+        yield return new WaitForSeconds(4f);
+        Visible();
+    }
+    private void Invisible(){
+        spriteRenderer.enabled = false;
+        foreach(SpriteRenderer sr in healthBarSprites){
+            sr.enabled = false;
+        }
+    }
+    private void Visible(){
+        spriteRenderer.enabled = true;
+        foreach(SpriteRenderer sr in healthBarSprites){
+            sr.enabled = true;
+        }
     }
     private void FixedUpdate()
     {
@@ -74,16 +105,20 @@ public class AssassinBoss : MonoBehaviour
     }
     private void SpreadProjectile()
     {
-        for (int i = -5; i < 6; i++)
+        for (int i = -4; i < 5; i++)
         {
             Shoot(i*projectileSpreadValue, 1, shuriken);
+            Shoot(i*projectileSpreadValue, -1, shuriken);
         }
     }
-    private IEnumerator LethalAttack(){
-        Shoot(0,1,kunai);
-        Transform destination = kunai.GetComponent<Transform>();
+    private void LethalAttack(){
+        StartCoroutine(LethalAttackCoroutine());
+    }
+    private IEnumerator LethalAttackCoroutine(){
+        Shoot(0,2,kunai);
+        Transform destination = FindObjectOfType<BossKunai>().GetComponent<Transform>();
         yield return new WaitForSeconds(0.75f);
-        while (Vector2.Distance(transform.position,destination.position)<1.5){
+        while (Vector2.Distance(transform.position,destination.position)>1.5){
             dashHitbox.SetActive(true);
             DashToKunai(destination);
             yield return null;
@@ -96,10 +131,11 @@ public class AssassinBoss : MonoBehaviour
     }
     private void Attack()
     {
-        anim.SetTrigger("Attack");
+        
         Collider2D[] hitZone = Physics2D.OverlapCircleAll(attackPosition.position, attackRadius, playerOnly);
         for (int i = 0; i < hitZone.Length; i++)
         {
+            anim.SetTrigger("Attack");
             hitZone[i].GetComponent<Player>().TakeDamage(damage);
             hitZone[i].GetComponent<Player>().TakeDamageOverTime(damagePerTick, frequency, numberOfTicks);
         }

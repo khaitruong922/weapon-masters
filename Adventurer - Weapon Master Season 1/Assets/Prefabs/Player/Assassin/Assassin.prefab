@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4560758995748450468}
   - component: {fileID: 1743468698839182678}
   - component: {fileID: 3490166197359086803}
-  m_Layer: 11
+  - component: {fileID: 4244764957012109602}
+  m_Layer: 14
   m_Name: DashHitbox
   m_TagString: AllyProjectile
   m_Icon: {fileID: 0}
@@ -110,6 +111,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 900
+--- !u!114 &4244764957012109602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6430836863497551407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29c44dfb1044196449ed8c2ddb638c74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6672731197018185458
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,8 +281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14ad10fdd39043342a1dd7d7c72e248f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 4401688569126756417, guid: 6f9b3e81b0441bc449eb0dc939478903,
-    type: 3}
   shootEffect: {fileID: 3939188803438828072, guid: a4458cf66e055ac4fbcc42ea2b66cc4d,
     type: 3}
   damage: 150
@@ -279,6 +290,8 @@ MonoBehaviour:
   enemyOnly:
     serializedVersion: 2
     m_Bits: 33792
+  shuriken: {fileID: 4401688569126756417, guid: 6f9b3e81b0441bc449eb0dc939478903,
+    type: 3}
   damagePerTick: 30
   frequency: 0.5
   numberOfTicks: 6

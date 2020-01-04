@@ -5,16 +5,15 @@ using UnityEngine;
 public class BossKunai : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float stopTime = 0.25f;
-    public float lifetime = 5f;
+    public float stopTime = 0.4f;
+    public float lifetime = 2f;
     public float damage = 250f;
     private CircleCollider2D circleCollider2D;
     private void Start(){
         rb = GetComponent<Rigidbody2D>();
         circleCollider2D = GetComponent<CircleCollider2D>();
         StartCoroutine(Stop());
-        StartCoroutine(SetInactive());
-        Destroy(gameObject,lifetime+10);
+        Destroy(gameObject,lifetime);
     }   
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Wall")){
@@ -29,9 +28,5 @@ public class BossKunai : MonoBehaviour
         yield return new WaitForSeconds(stopTime);
         rb.velocity = Vector3.zero;
         circleCollider2D.enabled = false;
-    }
-    private IEnumerator SetInactive(){
-        yield return new WaitForSeconds(lifetime);
-        gameObject.SetActive(false);
     }
 }
