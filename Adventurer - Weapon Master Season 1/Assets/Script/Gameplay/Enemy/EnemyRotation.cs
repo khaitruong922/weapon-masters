@@ -8,6 +8,7 @@ public class EnemyRotation : MonoBehaviour
     public float stopDistance = 6f;
     public float retreatDistance = 4f;
     public float speed = 4f;
+    public float retreatSpeed = 2f;
     public float rotationOffset = 90;
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,7 @@ public class EnemyRotation : MonoBehaviour
             }
             else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
             {
-                transform.position = Vector2.MoveTowards(transform.position, target.position, -speed * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position, target.position, -retreatSpeed * Time.deltaTime);
             }
 
         }

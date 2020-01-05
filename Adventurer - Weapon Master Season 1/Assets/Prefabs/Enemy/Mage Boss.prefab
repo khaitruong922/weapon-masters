@@ -632,7 +632,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopDistance: 5
   retreatDistance: 3
-  speed: 3.5
+  speed: 4
+  retreatSpeed: 2.5
   rotationOffset: 90
 --- !u!114 &7019920768750217012
 MonoBehaviour:

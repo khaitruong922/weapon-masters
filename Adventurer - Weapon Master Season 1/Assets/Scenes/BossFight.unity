@@ -2352,6 +2352,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gunslinger Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 6654454333592174183, guid: 5bf8b7e45621a074dbaed8690fb57f58,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6654454333592174180, guid: 5bf8b7e45621a074dbaed8690fb57f58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -98175,36 +98180,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &600487040
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 600487041}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &600487041
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600487040}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2306218, y: 5.4936495, z: -9.96875}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &651021733
 GameObject:
   m_ObjectHideFlags: 0
@@ -98592,6 +98567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Assassin Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530808417686947790, guid: f44035157cc010042b525f3b5814535e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4530808417686947784, guid: f44035157cc010042b525f3b5814535e,
         type: 3}
@@ -104485,6 +104465,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1921302270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921302271}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1921302271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921302270}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 106.09634, y: -3.0230556, z: 15.235753}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1957027464
 GameObject:
   m_ObjectHideFlags: 0
@@ -104880,7 +104890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: babe44e14876c4048a6e56a603d31a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogOfWar: {fileID: 600487040}
+  fogOfWar: {fileID: 1921302270}
   player:
   - {fileID: 4919403630865228079, guid: a5dd95495c51f394880b48d9eccf2388, type: 3}
   - {fileID: 7131651934969864577, guid: a3814cf3b183b8140bf83858515d9423, type: 3}
@@ -104901,7 +104911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110896960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.5, y: -0.9, z: 0}
+  m_LocalPosition: {x: -32.3, y: -0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

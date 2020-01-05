@@ -95,9 +95,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.448236}
+  m_Offset: {x: 0, y: 0.6695461}
   serializedVersion: 2
-  m_Radius: 1.2306018
+  m_Radius: 2.0420723
 --- !u!114 &1807989081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4530808417686947784
 Transform:
   m_ObjectHideFlags: 0
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 606bfe57e0d17d04982f45f3a510add4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopDistance: 0
+  stopDistance: 0.5
   retreatDistance: 0
   speed: 6
   rotationOffset: 90
