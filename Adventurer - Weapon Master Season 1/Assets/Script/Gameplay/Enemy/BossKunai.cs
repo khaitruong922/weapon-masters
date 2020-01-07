@@ -19,6 +19,7 @@ public class BossKunai : MonoBehaviour
         if(other.CompareTag("Wall")){
             rb.velocity = Vector3.zero;
             circleCollider2D.enabled = false;
+            AudioManager.Instance.Play("KunaiHit");
         }
         if(other.CompareTag("Player")){
             other.GetComponent<Player>().TakeDamage(damage);
@@ -28,5 +29,6 @@ public class BossKunai : MonoBehaviour
         yield return new WaitForSeconds(stopTime);
         rb.velocity = Vector3.zero;
         circleCollider2D.enabled = false;
+        AudioManager.Instance.Play("KunaiHit");
     }
 }

@@ -45,10 +45,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Theme1
-    clip: {fileID: 8300000, guid: 988d2e1371ea2ac49a7269548fc9bf80, type: 3}
-    volume: 0.3
+    clip: {fileID: 8300000, guid: 26995497bc0baab4e8406b30331c162b, type: 3}
+    volume: 0.1
     pitch: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Click
     clip: {fileID: 8300000, guid: 96e91974464b91448b54dc577995cb46, type: 3}
@@ -128,8 +128,68 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Shield
-    clip: {fileID: 8300000, guid: c0e51a0a69f67324fbcbcc5455ae641e, type: 3}
+  - name: Kunai
+    clip: {fileID: 8300000, guid: 635642a5649fa0843b0f13100ce84ee3, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: KunaiThrow
+    clip: {fileID: 8300000, guid: b37775cb8c2b9d84ba401e4975fbc2bc, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AssassinAttack
+    clip: {fileID: 8300000, guid: f474a8853b0288d4ca7919338fcd0f6c, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: AssassinAttackHit
+    clip: {fileID: 8300000, guid: 3407e4508c53aa34b899f6b08ca49497, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: KunaiHit
+    clip: {fileID: 8300000, guid: 558e894f1cd68c147879137d0c4487f3, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shuriken
+    clip: {fileID: 8300000, guid: dde5cf10dc68d3e49bea22357c45dc90, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Dash
+    clip: {fileID: 8300000, guid: fed3f74578b266c44a3d2fc6e7585c0d, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: UltimateDash
+    clip: {fileID: 8300000, guid: dde5cf10dc68d3e49bea22357c45dc90, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: 59b9b7db74650b24dbe451fc554c5863, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shuriken
+    clip: {fileID: 8300000, guid: dde5cf10dc68d3e49bea22357c45dc90, type: 3}
+    volume: 0.367
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Shuriken
+    clip: {fileID: 8300000, guid: dde5cf10dc68d3e49bea22357c45dc90, type: 3}
     volume: 0.367
     pitch: 1
     loop: 0

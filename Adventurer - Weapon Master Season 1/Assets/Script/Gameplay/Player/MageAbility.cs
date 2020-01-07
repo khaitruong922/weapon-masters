@@ -79,6 +79,7 @@ public class MageAbility : MonoBehaviour
         else rCooldownLeft -= Time.deltaTime;
     }
     void Explosion(){
+        AudioManager.Instance.Play("Explosion");
         GameObject go = Instantiate(explosion,player.mousePos, Quaternion.identity);
         Destroy(go, destroyTime);
     }
@@ -100,9 +101,11 @@ public class MageAbility : MonoBehaviour
     }
     void LightOrb(float x, float y)
     {
+        if(Time.timeScale>0){
         GameObject p = Instantiate(lightOrb, transform.position + new Vector3(x, y, 0).normalized * 2.2f, transform.rotation);
         Rigidbody2D rb = p.GetComponent<Rigidbody2D>();
         rb.AddForce(firePoint.TransformVector(x, y, 0) * magicForce, ForceMode2D.Impulse);
+        }
     }
     IEnumerator MultiShoot(int shots, float delay)
     {

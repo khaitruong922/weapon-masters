@@ -23,6 +23,7 @@ public class GunslingerBoss : MonoBehaviour
     public float qCooldown = 8f;
     public int numberOfShots = 10;
     public float delay = 0.1f;
+    public int bonus = 4;
 
     [Header("High Noon")]
     public float eCooldown = 12f;
@@ -71,7 +72,7 @@ public class GunslingerBoss : MonoBehaviour
             AudioManager.Instance.Play("Shoot");
             yield return new WaitForSeconds(delay);
         }
-        numberOfShots += 4;
+        numberOfShots += bonus;
     }
     private void Ricochet()
     {

@@ -83,6 +83,7 @@ public class MageBoss : MonoBehaviour
         else return eProjectile[1];
     }
     void Explosion(){
+        AudioManager.Instance.Play("Explosion");
         GameObject go = Instantiate(explosion,player.position,Quaternion.identity);
         Destroy(go,1.1f);
     }

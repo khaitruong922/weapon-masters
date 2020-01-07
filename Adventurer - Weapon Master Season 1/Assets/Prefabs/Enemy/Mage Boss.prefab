@@ -675,14 +675,14 @@ MonoBehaviour:
   attackSpeed: 1.25
   blackHole: {fileID: 8320500245282469129, guid: f061d9fbc69ab5d459c00ad0c6918d92,
     type: 3}
-  qCooldown: 8
+  qCooldown: 7
   delay: 0.1
   shield: {fileID: 257676152936791352}
   eProjectile:
   - {fileID: 3478984373105806335, guid: 6801baeb9b85a074289b8f54c80be905, type: 3}
   - {fileID: 4488314231204636958, guid: d0670deed23855a47b32ace17e936e77, type: 3}
-  blackHoleProbability: 0.4
-  eCooldown: 14
+  blackHoleProbability: 0.5
+  eCooldown: 12
   eDuration: 4
   explosion: {fileID: 5393329475677053324, guid: c18aa2b234fc42f4580dc8c6729d52e0,
     type: 3}

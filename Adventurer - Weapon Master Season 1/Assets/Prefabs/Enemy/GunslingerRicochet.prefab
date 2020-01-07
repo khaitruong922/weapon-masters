@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 882441620696730771}
   - component: {fileID: 5904038378690213844}
   m_Layer: 13
-  m_Name: GunslingerBossBullet 1
+  m_Name: GunslingerRicochet
   m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,6 +131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2b7f8312da60ea4e8d3172688ed70af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 15
   destroyTime: 5
   effect: {fileID: 7960841303700082276, guid: d5fcfba4e6ff7064881e46d4074a923a, type: 3}

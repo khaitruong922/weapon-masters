@@ -65,8 +65,15 @@ public class AssassinAbility : MonoBehaviour
                 if (Input.GetMouseButton(0))
                 {
                     anim.SetTrigger("Attack");
+                   
 
                     Collider2D[] hitZone = Physics2D.OverlapCircleAll(attackPosition.position, attackRange, enemyOnly);
+                    if (hitZone.Length == 0){
+                        AudioManager.Instance.Play("AssassinAttack");
+                    }
+                    else{
+                        AudioManager.Instance.Play("AssassinAttackHit");
+                    }
                     for (int i = 0; i < hitZone.Length; i++)
                     {
                         hitZone[i].GetComponent<Enemy>().TakeDamage(damage);
@@ -85,6 +92,7 @@ public class AssassinAbility : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Q))
             {
+                AudioManager.Instance.Play("Shuriken");
                 qCooldownLeft = qCooldown;
                 for (float i = -2; i < 3; i++)
                 {
@@ -100,6 +108,7 @@ public class AssassinAbility : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                AudioManager.Instance.Play("Dash");
                 dashTimeLeft = dashTime;
                 eCooldownLeft = eCooldown;
                 if (dashTimeLeft >= 0)
@@ -156,6 +165,7 @@ public class AssassinAbility : MonoBehaviour
     }
     void Kunai(float x, float y)
     {
+        AudioManager.Instance.Play("KunaiThrow");
         GameObject go = Instantiate(kunai, transform.position, transform.rotation);
         Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
         rb.AddForce(attackPosition.TransformVector(x, y, 0) * kunaiForce, ForceMode2D.Impulse);
@@ -166,6 +176,7 @@ public class AssassinAbility : MonoBehaviour
         Transform kunai = FindObjectOfType<Kunai>().GetComponent<Transform>();
         if (kunai != null)
         {
+            AudioManager.Instance.Play("Dash");
             dashHitbox.SetActive(true);
             while (Vector2.Distance(transform.position,kunai.position)>1.5)
             {

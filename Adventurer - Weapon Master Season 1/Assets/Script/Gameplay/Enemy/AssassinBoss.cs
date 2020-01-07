@@ -72,6 +72,7 @@ public class AssassinBoss : MonoBehaviour
         rb.AddForce(attackPosition.TransformVector(x, y, 0) * projectileForce, ForceMode2D.Impulse);
     }
     private void Dash(){
+        AudioManager.Instance.Play("Dash");
         dashTimeLeft=dashTime;
     }
     private void InvisibleCoroutineCaller(){
@@ -105,6 +106,7 @@ public class AssassinBoss : MonoBehaviour
     }
     private void SpreadProjectile()
     {
+        AudioManager.Instance.Play("Shuriken");
         for (int i = -4; i < 5; i++)
         {
             Shoot(i*projectileSpreadValue, 1, shuriken);
@@ -116,6 +118,7 @@ public class AssassinBoss : MonoBehaviour
     }
     private IEnumerator LethalAttackCoroutine(){
         Shoot(0,2,kunai);
+        AudioManager.Instance.Play("KunaiThrow");
         Transform destination = FindObjectOfType<BossKunai>().GetComponent<Transform>();
         yield return new WaitForSeconds(0.75f);
         while (Vector2.Distance(transform.position,destination.position)>1.5){
@@ -127,15 +130,16 @@ public class AssassinBoss : MonoBehaviour
         
     }
     private void DashToKunai(Transform destination){
+        AudioManager.Instance.Play("Dash");
         transform.position = Vector2.MoveTowards(transform.position,destination.position,ultDashSpeed*Time.deltaTime);
     }
     private void Attack()
     {
-        
         Collider2D[] hitZone = Physics2D.OverlapCircleAll(attackPosition.position, attackRadius, playerOnly);
         for (int i = 0; i < hitZone.Length; i++)
         {
             anim.SetTrigger("Attack");
+            AudioManager.Instance.Play("AssassinAttackHit");
             hitZone[i].GetComponent<Player>().TakeDamage(damage);
             hitZone[i].GetComponent<Player>().TakeDamageOverTime(damagePerTick, frequency, numberOfTicks);
         }

@@ -20,6 +20,7 @@ public class Kunai : MonoBehaviour
         if(other.CompareTag("Wall")){
             rb.velocity = Vector3.zero;
             circleCollider2D.enabled = false;
+            AudioManager.Instance.Play("KunaiHit");
         }
         if(other.CompareTag("Enemy")){
             other.GetComponent<Enemy>().TakeDamage(damage);
@@ -27,6 +28,7 @@ public class Kunai : MonoBehaviour
     }
     private IEnumerator Stop(){
         yield return new WaitForSeconds(stopTime);
+        AudioManager.Instance.Play("KunaiHit");
         rb.velocity = Vector3.zero;
         circleCollider2D.enabled = false;
     }
