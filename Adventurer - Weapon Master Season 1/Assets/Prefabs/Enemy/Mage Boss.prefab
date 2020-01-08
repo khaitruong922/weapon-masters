@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 9000
+  maxHP: 10000
   currentHP: 0
   dropChance: 1
   deathEffect: {fileID: 8890188089654198971, guid: 075dad0ed7baa2848b4d185c710d71e1,
@@ -675,7 +675,7 @@ MonoBehaviour:
   attackSpeed: 1.25
   blackHole: {fileID: 8320500245282469129, guid: f061d9fbc69ab5d459c00ad0c6918d92,
     type: 3}
-  qCooldown: 7
+  qCooldown: 6
   delay: 0.1
   shield: {fileID: 257676152936791352}
   eProjectile:
@@ -683,7 +683,7 @@ MonoBehaviour:
   - {fileID: 4488314231204636958, guid: d0670deed23855a47b32ace17e936e77, type: 3}
   blackHoleProbability: 0.5
   eCooldown: 12
-  eDuration: 4
+  eDuration: 5
   explosion: {fileID: 5393329475677053324, guid: c18aa2b234fc42f4580dc8c6729d52e0,
     type: 3}
   rCooldown: 20

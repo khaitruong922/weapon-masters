@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 953720a9f0b1f1a489ca56477f2ac455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 5.5
   stopDistance: 0
   retreatDistance: 0
 --- !u!114 &3589165643335884531
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b789620da1cf0741b7d2d4cd7f1c7b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 35
+  damage: 40
 --- !u!50 &50753147912558056
 Rigidbody2D:
   serializedVersion: 4

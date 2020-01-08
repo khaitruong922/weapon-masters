@@ -296,7 +296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c43e1e87ac053349bd4492113b51e59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 9000
+  maxHP: 10000
   currentHP: 0
   dropChance: 1
   deathEffect: {fileID: 8890188089654198971, guid: 075dad0ed7baa2848b4d185c710d71e1,
@@ -325,23 +325,23 @@ MonoBehaviour:
   damage: 35
   attackRadius: 1.2
   attackSpeed: 1.5
-  damagePerTick: 3
+  damagePerTick: 4
   numberOfTicks: 4
   frequency: 0.5
   shuriken: {fileID: 997034034612433592, guid: ae08a3f6378d13c4d8cbfe271123f55d, type: 3}
   qCooldown: 6
   projectileSpreadValue: 0.2
   projectileForce: 30
-  eCooldown: 7
+  eCooldown: 6
   dashSpeed: 30
   dashTime: 0.2
   kunai: {fileID: 5620352477716125929, guid: 72b946fdadee084479190378cdd6d95f, type: 3}
   dashHitbox: {fileID: 4270551427098158867}
   ultDashSpeed: 50
-  rCooldown: 13
+  rCooldown: 11
   clone: {fileID: 4530808417686947790}
   invisbleDuration: 6
-  invisibleStartTime: 12
+  invisibleStartTime: 8
   invisbleCooldown: 12
 --- !u!1 &4530808418910716914
 GameObject:
