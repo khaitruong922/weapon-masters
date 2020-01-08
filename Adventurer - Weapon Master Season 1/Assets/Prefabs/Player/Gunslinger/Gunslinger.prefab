@@ -210,7 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   mousePos: {x: 0, y: 0}
-  speed: 4.5
+  speed: 5
   maxHP: 1000
   currentHP: 0
   healthBar: {fileID: 0}

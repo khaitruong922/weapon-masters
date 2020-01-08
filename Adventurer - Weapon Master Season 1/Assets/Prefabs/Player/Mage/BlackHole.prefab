@@ -4890,10 +4890,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.75
-  damagePerSecond: 100
+  damagePerSecond: 125
   lifetime: 4
   sizeIncrease: 7
-  pullForce: 3
+  pullForce: 4
 --- !u!95 &1677524895
 Animator:
   serializedVersion: 3

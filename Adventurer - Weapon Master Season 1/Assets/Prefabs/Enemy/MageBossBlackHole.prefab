@@ -4909,7 +4909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.5
-  damagePerSecond: 25
+  damagePerSecond: 20
   lifetime: 2
   sizeIncrease: 4
   pullForce: 0.5

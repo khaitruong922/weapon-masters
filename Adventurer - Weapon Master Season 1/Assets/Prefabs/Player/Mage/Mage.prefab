@@ -281,7 +281,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   mousePos: {x: 0, y: 0}
   speed: 5
-  maxHP: 900
+  maxHP: 950
   currentHP: 0
   healthBar: {fileID: 0}
   damageTextPrefab: {fileID: 9220500389664483987, guid: 9221ba38d25b3bf46a04255756e7afb6,

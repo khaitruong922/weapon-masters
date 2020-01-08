@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.5
-  damagePerSecond: 15
+  damagePerSecond: 10
   lifetime: 2
   sizeIncrease: 2
   pullForce: 0.5
