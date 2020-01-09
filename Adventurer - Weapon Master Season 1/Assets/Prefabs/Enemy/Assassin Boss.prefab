@@ -340,9 +340,9 @@ MonoBehaviour:
   ultDashSpeed: 50
   rCooldown: 9
   clone: {fileID: 4530808417686947790}
-  invisbleDuration: 2
+  invisbleDuration: 3
   invisibleStartTime: 8
-  invisbleCooldown: 4
+  invisbleCooldown: 6
 --- !u!1 &4530808418910716914
 GameObject:
   m_ObjectHideFlags: 0
