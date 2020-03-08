@@ -80,7 +80,7 @@ public class AssassinBoss : MonoBehaviour
     }
     private IEnumerator InvisibleCoroutine(){
         Invisible();
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(invisbleDuration);
         Visible();
     }
     private void Invisible(){
