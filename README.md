@@ -42,6 +42,18 @@ Desktop
 |:--:| 
 | *Character Selection* |
 
+|![Gunslinger](Screenshots/gunslinger.png)|
+|:--:| 
+| *Gunslinger* |
+
+|![Mage](Screenshots/mage.png)|
+|:--:| 
+| *Mage* |
+
+|![Assassin](Screenshots/assassin.png)|
+|:--:| 
+| *Assassin* |
+
 ## Where to play?
 
 Play the game [here](https://khaitruong922.itch.io/weapon-masters)
