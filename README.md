@@ -12,6 +12,14 @@ Desktop
 
 2020.2.1f1
 
+## Contributors
+
+- Khai Truong - [khaitruong922](https://github.com/khaitruong922) - Game Developer / Game Designer
+
+- Huynh Vinh Tin - [Kasturez](https://github.com/Kasturez) - Game Artist
+
+- Hua Ha Bao Long - [GreyArmageddon](https://github.com/GreyArmageddon) - Game Programmer
+
 ## Preview
 
 |![Level 1](Screenshots/level1.png)|
